@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Погнали</title>
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <div class="page-header__logo logo">
+      <a href="index.html">
+        <img src="https://via.placeholder.com/96x15" alt="">
+      </a>
+    </div>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="#">
+              О сервисе
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">
+              Направления
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Попутчики
+            </a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item user-list__item--login">
+            <a class="login-link" href="#">
+              Авторизация
+            </a>
+          </li>
+          <li class="user-list__item user-list__item--phone">
+            <a class="phone-link" href="tel:+88005558628">8 800 555-86-28</a>
+          </li>
+          <li class="user-list__item user-list__item--email">
+            <a class="email-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
+
+        <div class="main-nav__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в
+                Фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
+                Инстаграме</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <h1 class="page-main__title">Попутчики</h1>
+    <section class="country-filter">
+      <div class="country-filter__wrapper">
+        <img class="country-filter__logo" src="https://via.placeholder.com/15x10" alt="">
+        <h2 class="country-filter__title">Фильтрация по странам:</h2>
+        <button class="country-filter__toggle" type="button">
+          <span class="visually-hidden">Открыть фильтр</span>
+        </button>
+        <div class="continents">
+          <ul class="continents__list">
+            <li class="continents__item">Европа</li>
+            <li class="continents__item">Азия</li>
+            <li class="continents__item">Америка</li>
+            <li class="continents__item">Острова</li>
+          </ul>
+        </div>
+        <div class="alphabet">
+          <ul class="alphabet__list">
+            <li class="alphabet__item alphabet__item--current">А</li>
+            <li class="alphabet__item">Б</li>
+            <li class="alphabet__item">В</li>
+            <li class="alphabet__item">Г</li>
+            <li class="alphabet__item">Д</li>
+            <li class="alphabet__item">Е</li>
+            <li class="alphabet__item">З</li>
+            <li class="alphabet__item">И</li>
+            <li class="alphabet__item">К</li>
+            <li class="alphabet__item">Л</li>
+            <li class="alphabet__item">М</li>
+            <li class="alphabet__item">Н</li>
+            <li class="alphabet__item">О</li>
+            <li class="alphabet__item">П</li>
+            <li class="alphabet__item">Р</li>
+            <li class="alphabet__item">С</li>
+            <li class="alphabet__item">Т</li>
+            <li class="alphabet__item">У</li>
+            <li class="alphabet__item">Ф</li>
+            <li class="alphabet__item">Х</li>
+            <li class="alphabet__item">Ч</li>
+            <li class="alphabet__item">Ш</li>
+            <li class="alphabet__item">Э</li>
+            <li class="alphabet__item">Ю</li>
+            <li class="alphabet__item">Я</li>
+          </ul>
+        </div>
+        <div class="countries">
+          <ul class="countries__list">
+            <li class="countries__item">
+              <a class="countries__link" href="https://www.pognali.ru/islands/australia">Австралия</a>
+            </li>
+            <li class="countries__item">
+              <a class="countries__link" href="https://www.pognali.ru/europe/austria">Австрия</a>
+            </li>
+            <li class="countries__item">
+              <a class="countries__link" href="https://www.pognali.ru/europe/azerbajdzan">Азербайджан</a>
+            </li>
+            <li class="countries__item">
+              <a class="countries__link" href="#">Албания</a>
+            </li>
+            <li class="countries__item">
+              <a class="countries__link" href="#">Алжир</a>
+            </li>
+            <li class="countries__item">
+              <a class="countries__link" href="#">Ангола</a>
+            </li>
+            <li class="countries__item">
+              <a class="countries__link" href="#">Андорра</a>
+            </li>
+            <li class="countries__item">
+              <a class="countries__link" href="#">Антигуа и Барбуда</a>
+            </li>
+            <li class="countries__item">
+              <a class="countries__link" href="#">Аргентина</a>
+            </li>
+            <li class="countries__item">
+              <a class="countries__link" href="#">Армения</a>
+            </li>
+            <li class="countries__item">
+              <a class="countries__link" href="#">Афганистан</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button class="country-filter__button" type="button">Свернуть</button>
+    </section>
+
+    <section class="choice-of-companion">
+      <div class="choice-of-companion__wrapper">
+        <h2 class="choice-of-companion__title">Подберите идеального попутчика</h2>
+        <form class="criteries" method="get" action="https://echo.htmlacademy.ru">
+          <ul class="criteries__list">
+            <li class="criteries__item dropdown">
+              <div class="dropdown__wrapper">
+                <span class="dropdown__name">Хобби</span>
+                <ul class="dropdown__list">
+                  <li class="dropdown__option">
+                    <label for="sport">Спортзал</label>
+                    <input class="filter-input" type="checkbox" id="sport" name="sport" checked>
+                  </li>
+                  <li class="dropdown__option">
+                    <label for="hookah">Кальян</label>
+                    <input class="filter-input" type="checkbox" id="hookah" name="hookah">
+                  </li>
+                  <li class="dropdown__option">
+                    <label for="sofa">Диван</label>
+                    <input class="filter-input" type="checkbox" id="sofa" name="sofa">
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="criteries__item dropdown">
+              <div class="dropdown__wrapper">
+                <span class="dropdown__name">Музыка</span>
+                <ul class="dropdown__list">
+                  <li class="dropdown__option">
+                    <label for="rock">Тяжелый рок</label>
+                    <input class="filter-input" type="checkbox" id="rock" name="rock" checked>
+                  </li>
+                  <li class="dropdown__option">
+                    <label for="rap">Русский рэп</label>
+                    <input class="filter-input" type="checkbox" id="rap" name="rap">
+                  </li>
+                  <li class="dropdown__option">
+                    <label for="dance">Евроденс</label>
+                    <input class="filter-input" type="checkbox" id="dance" name="dance">
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="criteries__item dropdown">
+              <div class="dropdown__wrapper">
+                <span class="dropdown__name">Еда</span>
+                <ul class="dropdown__list">
+                  <li class="dropdown__option">
+                    <label for="meat">Мясоед</label>
+                    <input class="filter-input" type="checkbox" id="meat" name="meat" checked>
+                  </li>
+                  <li class="dropdown__option">
+                    <label for="pp">Сидит на ПП</label>
+                    <input class="filter-input" type="checkbox" id="pp" name="pp">
+                  </li>
+                  <li class="dropdown__option">
+                    <label for="vegan">Веган-сыроед</label>
+                    <input class="filter-input" type="checkbox" id="vegan" name="vegan">
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="criteries__item dropdown">
+              <div class="dropdown__wrapper transport">
+                <span class="dropdown__name">Транспорт</span>
+                <ul class="transport__list">
+                  <li class="transport__icon transport__icon--plane">Самолет</li>
+                  <li class="transport__icon transport__icon--bus">Автобус</li>
+                  <li class="transport__icon transport__icon--cycle">Велосипед</li>
+                  <li class="transport__icon transport__icon--foot">Пешком</li>
+                </ul>
+              </div>
+            </li>
+            <li class="criteries__item dropdown">
+              <div class="dropdown__wrapper">
+                <span class="dropdown__name">Левел</span>
+                <div class="level-controls">
+                  <label class="min-level">
+                    <input type="text" name="min-level" value="30" aria-label="Поле для задания минимального уровня">
+                  </label>
+                  <label class="max-level">
+                    <input type="text" name="max-level" value="100" aria-label="Поле для задания максимального уровня">
+                  </label>
+                </div>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0" aria-label="Рычаг переключения уровня от"></div>
+                  <div class="toggle toggle-max" tabindex="0" aria-label="Рычаг переключения уровня до"></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <input class="criteries__button catalog-button" type="submit" value="Показать">
+        </form>
+      </div>
+    </section>
+
+    <section class="profile-catalog">
+      <h2 class="visually-hidden">Каталог попутчиков</h2>
+      <ul class="profile-catalog__list">
+        <li class="profile-catalog__item">
+          <a class="profile-name" href="#">
+            <h3 class="profile-name__link">Таня Фирсова</h3>
+          </a>
+          <a class="profile-image" href="#">
+            <img class="profile-image__photo" src="https://via.placeholder.com/70x70" alt="">
+          </a>
+          <div class="profile-likes">
+            <p class="profile-likes__info">1,5 M</p>
+          </div>
+          <div class="profile-interests">
+            <p class="profile-interests__info">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+          </div>
+          <div class="profile-countries">
+            <p class="profile-countries__title">Хочет посетить:</p>
+            <ul class="profile-countries__list">
+              <li class="profile-countries__item">Шри-ланка</li>
+              <li class="profile-countries__item">Тайланд</li>
+              <li class="profile-countries__item">Сейшелы</li>
+            </ul>
+          </div>
+          <div class="profile-transport">
+            <p class="profile-transport__title">Транспорт:</p>
+            <ul class="profile-transport__list">
+              <li class="profile-transport__icon profile-transport__icon--plane">Самолет</li>
+              <li class="profile-transport__icon profile-transport__icon--bus">Автобус</li>
+              <li class="profile-transport__icon profile-transport__icon--cycle">Велосипед</li>
+              <li class="profile-transport__icon profile-transport__icon--foot">Пешком</li>
+            </ul>
+          </div>
+          <div class="profile-level">
+            <span class="profile-level__number">99</span>
+            <span class="profile-level__text">level</span>
+          </div>
+          <a class="profile-catalog__button catalog-button" href="#">Позвать!</a>
+        </li>
+        <li class="profile-catalog__item">
+          <a class="profile-name" href="#">
+            <h3 class="profile-name__link">Петя Демин</h3>
+          </a>
+          <a class="profile-image" href="#">
+            <img class="profile-image__photo" src="https://via.placeholder.com/70x70" alt="">
+          </a>
+          <div class="profile-likes">
+            <p class="profile-likes__info">1500</p>
+          </div>
+          <div class="profile-interests">
+            <p class="profile-interests__info">#бургер #бар #футбол #концерт #крафт</p>
+          </div>
+          <div class="profile-countries">
+            <p class="profile-countries__title">Хочет посетить:</p>
+            <ul class="profile-countries__list">
+              <li class="profile-countries__item">Бельгия</li>
+              <li class="profile-countries__item">Чехия</li>
+            </ul>
+          </div>
+          <div class="profile-transport">
+            <p class="profile-transport__title">Транспорт:</p>
+            <ul class="profile-transport__list">
+              <li class="profile-transport__icon profile-transport__icon--plane">Самолет</li>
+              <li class="profile-transport__icon profile-transport__icon--bus">Автобус</li>
+              <li class="profile-transport__icon profile-transport__icon--cycle">Велосипед</li>
+              <li class="profile-transport__icon profile-transport__icon--foot">Пешком</li>
+            </ul>
+          </div>
+          <div class="profile-level">
+            <span class="profile-level__number">80</span>
+            <span class="profile-level__text">level</span>
+          </div>
+          <a class="profile-catalog__button catalog-button" href="#">Позвать!</a>
+        </li>
+        <li class="profile-catalog__item">
+          <a class="profile-name" href="#">
+            <h3 class="profile-name__link">Марк Смолов</h3>
+          </a>
+          <a class="profile-image" href="#">
+            <img class="profile-image__photo" src="https://via.placeholder.com/70x70" alt="">
+          </a>
+          <div class="profile-likes">
+            <p class="profile-likes__info">170</p>
+          </div>
+          <div class="profile-interests">
+            <p class="profile-interests__info">#рэп #тату #хайпбист #кроссовки #суприм</p>
+          </div>
+          <div class="profile-countries">
+            <p class="profile-countries__title">Хочет посетить:</p>
+            <ul class="profile-countries__list">
+              <li class="profile-countries__item">США</li>
+              <li class="profile-countries__item">Австралия</li>
+              <li class="profile-countries__item">Доминика</li>
+            </ul>
+          </div>
+          <div class="profile-transport">
+            <p class="profile-transport__title">Транспорт:</p>
+            <ul class="profile-transport__list">
+              <li class="profile-transport__icon profile-transport__icon--plane">Самолет</li>
+              <li class="profile-transport__icon profile-transport__icon--bus">Автобус</li>
+              <li class="profile-transport__icon profile-transport__icon--cycle">Велосипед</li>
+              <li class="profile-transport__icon profile-transport__icon--foot">Пешком</li>
+            </ul>
+          </div>
+          <div class="profile-level">
+            <span class="profile-level__number">25</span>
+            <span class="profile-level__text">level</span>
+          </div>
+          <a class="profile-catalog__button catalog-button" href="#">Позвать!</a>
+        </li>
+        <li class="profile-catalog__item">
+          <a class="profile-name" href="#">
+            <h3 class="profile-name__link">Лариса Роговая</h3>
+          </a>
+          <a class="profile-image" href="#">
+            <img class="profile-image__photo" src="https://via.placeholder.com/70x70" alt="">
+          </a>
+          <div class="profile-likes">
+            <p class="profile-likes__info">25</p>
+          </div>
+          <div class="profile-interests">
+            <p class="profile-interests__info">#образование #карьера #учеба #линкедин</p>
+          </div>
+          <div class="profile-countries">
+            <p class="profile-countries__title">Хочет посетить:</p>
+            <ul class="profile-countries__list">
+              <li class="profile-countries__item">Великобритания</li>
+              <li class="profile-countries__item">Германия</li>
+            </ul>
+          </div>
+          <div class="profile-transport">
+            <p class="profile-transport__title">Транспорт:</p>
+            <ul class="profile-transport__list">
+              <li class="profile-transport__icon profile-transport__icon--plane">Самолет</li>
+              <li class="profile-transport__icon profile-transport__icon--bus">Автобус</li>
+              <li class="profile-transport__icon profile-transport__icon--cycle">Велосипед</li>
+              <li class="profile-transport__icon profile-transport__icon--foot">Пешком</li>
+            </ul>
+          </div>
+          <div class="profile-level">
+            <span class="profile-level__number">50</span>
+            <span class="profile-level__text">level</span>
+          </div>
+          <a class="profile-catalog__button catalog-button" href="#">Позвать!</a>
+        </li>
+      </ul>
+      <a class="profile-catalog__button catalog-button" href="#">Показать еще</a>
+    </section>
+
+    <section class="pagination">
+      <h2 class="visually-hidden">Нумерация страниц</h2>
+      <div class="pagination__wrapper">
+        <a class="pagination__arrow pagination__arrow--prev" href="#" aria-label="Перейти на страницу назад"></a>
+        <a class="pagination__arrow pagination__arrow--next" href="#" aria-label="Перейти на страницу вперед"></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__logo logo">
+        <img src="https://via.placeholder.com/96x15" alt="">
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в
+              Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
+              Инстаграме</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <span class="copyright__text">Разработано:</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="https://via.placeholder.com/27x34" alt="">
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
