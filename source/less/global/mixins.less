@@ -1,0 +1,88 @@
+// Mixins
+
+.basic-font {
+  font-family: "Bloggersans","Arial", sans-serif ;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.list-reset {
+  list-style: none;
+}
+
+.link-reset {
+  text-decoration: none;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.title--orange {
+  .title;
+  color: @special_orange;
+  margin-bottom: 19px;
+}
+
+
+.title--blue {
+  .title;
+  color: @basic_blue_dark;
+}
+
+.title--white {
+  .title;
+  color: @basic_white;
+}
+
+.outline {
+  outline: 3px solid rgb(107, 206, 107);
+  outline-offset: -3px;
+}
+
+.text-wrapper {
+  padding: 0 49px;
+  // max-width: 217px;
+}
+
+.wrapper {
+  padding: 0 25px;
+}
+
+
+// Global classes
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  .link-reset;
+  background-color: @basic_yellow;
+  color: @basic_blue_light;
+  min-width: 270px;
+  height: 62px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
