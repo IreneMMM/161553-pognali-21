@@ -1,8 +1,23 @@
 .companions {
+  position: relative;
   background-color: @basic_blue_dark;
-
   color: @basic_white;
   padding-top: 34px;
+  background-image: url(/img/companions_background_2.png), url(/img/companions_background_3.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top 37px right 25px, left -2px top 307px;
+}
+
+.companions::before {
+  content: "";
+  display: block;
+  width: 113px;
+  height: 132px;
+  background-color: @special_blue_dark_2;
+  border-radius: 0 20px 20px 0;
+  position: absolute;
+  top: 37px;
+  left: 0;
 }
 
 .companions ul {
@@ -11,10 +26,8 @@
 }
 
 .companions__wrapper {
+  position: relative;
   .wrapper;
-  background-image: url(/img/companions_background_1.png), url(/img/companions_background_2.png), url(/img/companions_background_3.png);
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: left 0%, top right, left 18%;
 
   &--text {
     padding-left: 24px;
@@ -35,6 +48,10 @@
   &--bold {
     font-weight: 700;
   }
+}
+
+.companions__user-list {
+  .list-reset;
 }
 
 .companions__user-card {
