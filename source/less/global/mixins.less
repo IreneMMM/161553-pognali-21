@@ -37,6 +37,15 @@
   margin-bottom: 19px;
 }
 
+.title--orange_tablet {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 45px;
+  margin: 0;
+  padding: 0;
+  color: @special_orange;
+}
+
 
 .title--blue {
   .title;
@@ -59,5 +68,46 @@
 }
 
 .wrapper {
-  padding: 0 25px;
+  margin: 0 auto;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  @media (min-width: @tablet) {
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 1320px;
+    margin: 0 auto;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
