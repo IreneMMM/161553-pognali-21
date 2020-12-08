@@ -4,13 +4,14 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
-  <header class="page-header">
+  <header class="page-header page-header--catalog">
     <div class="page-header__logo logo">
       <a href="index.html">
-        <img src="https://via.placeholder.com/96x15" alt="">
+        <img src="img/logo_mobile.png" alt="Логотип сайта Погнали" width="96" height="15">
       </a>
     </div>
     <nav class="main-nav">
@@ -79,7 +80,7 @@
         </button>
         <div class="continents">
           <ul class="continents__list">
-            <li class="continents__item">Европа</li>
+            <li class="continents__item continents__item--chosen">Европа</li>
             <li class="continents__item">Азия</li>
             <li class="continents__item">Америка</li>
             <li class="continents__item">Острова</li>
@@ -151,8 +152,8 @@
             </li>
           </ul>
         </div>
+        <button class="country-filter__button" type="button">Свернуть</button>
       </div>
-      <button class="country-filter__button" type="button">Свернуть</button>
     </section>
 
     <section class="choice-of-companion">
@@ -257,150 +258,151 @@
     <section class="profile-catalog">
       <h2 class="visually-hidden">Каталог попутчиков</h2>
       <ul class="profile-catalog__list">
-        <li class="profile-catalog__item">
-          <a class="profile-name" href="#">
-            <h3 class="profile-name__link">Таня Фирсова</h3>
+        <li class="profile-catalog__item profile">
+          <a class="profile__name" href="#">
+            <h3 class="profile__name-link">Таня Фирсова</h3>
           </a>
-          <a class="profile-image" href="#">
-            <img class="profile-image__photo" src="https://via.placeholder.com/70x70" alt="">
+          <a class="profile__image" href="#">
+            <img class="profile__image-photo" src="https://via.placeholder.com/70x70" alt="">
           </a>
-          <div class="profile-likes">
-            <p class="profile-likes__info">1,5 M</p>
+          <div class="profile__likes">
+            <p class="profile__likes-info">1,5 M</p>
           </div>
-          <div class="profile-interests">
-            <p class="profile-interests__info">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+          <div class="profile__interests">
+            <p class="profile__interests-info">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
           </div>
-          <div class="profile-countries">
-            <p class="profile-countries__title">Хочет посетить:</p>
-            <ul class="profile-countries__list">
-              <li class="profile-countries__item">Шри-ланка</li>
-              <li class="profile-countries__item">Тайланд</li>
-              <li class="profile-countries__item">Сейшелы</li>
+          <div class="profile__countries">
+            <p class="profile__countries-title">Хочет посетить:</p>
+            <ul class="profile__countries-list">
+              <li class="profile__countries-item">Шри-ланка</li>
+              <li class="profile__countries-item">Тайланд</li>
+              <li class="profile__countries-item">Сейшелы</li>
             </ul>
           </div>
-          <div class="profile-transport">
-            <p class="profile-transport__title">Транспорт:</p>
-            <ul class="profile-transport__list">
-              <li class="profile-transport__icon profile-transport__icon--plane">Самолет</li>
-              <li class="profile-transport__icon profile-transport__icon--bus">Автобус</li>
-              <li class="profile-transport__icon profile-transport__icon--cycle">Велосипед</li>
-              <li class="profile-transport__icon profile-transport__icon--foot">Пешком</li>
+          <div class="profile__transport">
+            <p class="profile__transport-title">Транспорт:</p>
+            <ul class="profile__transport-list">
+              <li class="profile__transport-icon profile__transport-icon--plane">Самолет</li>
+              <li class="profile__transport-icon profile__transport-icon--bus">Автобус</li>
+              <li class="profile__transport-icon profile__transport-icon--cycle">Велосипед</li>
+              <li class="profile__transport-icon profile__transport-icon--foot">Пешком</li>
             </ul>
           </div>
-          <div class="profile-level">
-            <span class="profile-level__number">99</span>
-            <span class="profile-level__text">level</span>
+          <div class="profile__level">
+            <span class="profile__level-number">99</span>
+            <span class="profile__level-text">левел:</span>
           </div>
           <a class="profile-catalog__button catalog-button" href="#">Позвать!</a>
         </li>
-        <li class="profile-catalog__item">
-          <a class="profile-name" href="#">
-            <h3 class="profile-name__link">Петя Демин</h3>
+
+        <li class="profile-catalog__item profile">
+          <a class="profile__name" href="#">
+            <h3 class="profile__name-link">Петя Демин</h3>
           </a>
-          <a class="profile-image" href="#">
-            <img class="profile-image__photo" src="https://via.placeholder.com/70x70" alt="">
+          <a class="profile__image" href="#">
+            <img class="profile__image-photo" src="https://via.placeholder.com/70x70" alt="">
           </a>
-          <div class="profile-likes">
-            <p class="profile-likes__info">1500</p>
+          <div class="profile__likes">
+            <p class="profile__likes-info">1500</p>
           </div>
-          <div class="profile-interests">
-            <p class="profile-interests__info">#бургер #бар #футбол #концерт #крафт</p>
+          <div class="profile__interests">
+            <p class="profile__interests-info">#бургер #бар #футбол #концерт #крафт</p>
           </div>
-          <div class="profile-countries">
-            <p class="profile-countries__title">Хочет посетить:</p>
-            <ul class="profile-countries__list">
-              <li class="profile-countries__item">Бельгия</li>
-              <li class="profile-countries__item">Чехия</li>
+          <div class="profile__countries">
+            <p class="profile__countries-title">Хочет посетить:</p>
+            <ul class="profile__countries-list">
+              <li class="profile__countries-item">Бельгия</li>
+              <li class="profile__countries-item">Чехия</li>
             </ul>
           </div>
-          <div class="profile-transport">
-            <p class="profile-transport__title">Транспорт:</p>
-            <ul class="profile-transport__list">
-              <li class="profile-transport__icon profile-transport__icon--plane">Самолет</li>
-              <li class="profile-transport__icon profile-transport__icon--bus">Автобус</li>
-              <li class="profile-transport__icon profile-transport__icon--cycle">Велосипед</li>
-              <li class="profile-transport__icon profile-transport__icon--foot">Пешком</li>
+          <div class="profile__transport">
+            <p class="profile__transport-title">Транспорт:</p>
+            <ul class="profile__transport-list">
+              <li class="profile__transport-icon profile__transport-icon--plane">Самолет</li>
+              <li class="profile__transport-icon profile__transport-icon--bus">Автобус</li>
+              <li class="profile__transport-icon profile__transport-icon--cycle">Велосипед</li>
+              <li class="profile__transport-icon profile__transport-icon--foot">Пешком</li>
             </ul>
           </div>
-          <div class="profile-level">
-            <span class="profile-level__number">80</span>
-            <span class="profile-level__text">level</span>
+          <div class="profile__level">
+            <span class="profile__level-number">80</span>
+            <span class="profile__level-text">левел:</span>
           </div>
           <a class="profile-catalog__button catalog-button" href="#">Позвать!</a>
         </li>
-        <li class="profile-catalog__item">
-          <a class="profile-name" href="#">
-            <h3 class="profile-name__link">Марк Смолов</h3>
+        <li class="profile-catalog__item profile">
+          <a class="profile__name" href="#">
+            <h3 class="profile__name-link">Марк Смолов</h3>
           </a>
-          <a class="profile-image" href="#">
-            <img class="profile-image__photo" src="https://via.placeholder.com/70x70" alt="">
+          <a class="profile__image" href="#">
+            <img class="profile__image-photo" src="https://via.placeholder.com/70x70" alt="">
           </a>
-          <div class="profile-likes">
-            <p class="profile-likes__info">170</p>
+          <div class="profile__likes">
+            <p class="profile__likes-info">170</p>
           </div>
-          <div class="profile-interests">
-            <p class="profile-interests__info">#рэп #тату #хайпбист #кроссовки #суприм</p>
+          <div class="profile__interests">
+            <p class="profile__interests-info">#рэп #тату #хайпбист #кроссовки #суприм</p>
           </div>
-          <div class="profile-countries">
-            <p class="profile-countries__title">Хочет посетить:</p>
-            <ul class="profile-countries__list">
-              <li class="profile-countries__item">США</li>
-              <li class="profile-countries__item">Австралия</li>
-              <li class="profile-countries__item">Доминика</li>
+          <div class="profile__countries">
+            <p class="profile__countries-title">Хочет посетить:</p>
+            <ul class="profile__countries-list">
+              <li class="profile__countries-item">США</li>
+              <li class="profile__countries-item">Австралия</li>
+              <li class="profile__countries-item">Доминика</li>
             </ul>
           </div>
-          <div class="profile-transport">
-            <p class="profile-transport__title">Транспорт:</p>
-            <ul class="profile-transport__list">
-              <li class="profile-transport__icon profile-transport__icon--plane">Самолет</li>
-              <li class="profile-transport__icon profile-transport__icon--bus">Автобус</li>
-              <li class="profile-transport__icon profile-transport__icon--cycle">Велосипед</li>
-              <li class="profile-transport__icon profile-transport__icon--foot">Пешком</li>
+          <div class="profile__transport">
+            <p class="profile__transport-title">Транспорт:</p>
+            <ul class="profile__transport-list">
+              <li class="profile__transport-icon profile__transport-icon--plane">Самолет</li>
+              <li class="profile__transport-icon profile__transport-icon--bus">Автобус</li>
+              <li class="profile__transport-icon profile__transport-icon--cycle">Велосипед</li>
+              <li class="profile__transport-icon profile__transport-icon--foot">Пешком</li>
             </ul>
           </div>
-          <div class="profile-level">
-            <span class="profile-level__number">25</span>
-            <span class="profile-level__text">level</span>
+          <div class="profile__level">
+            <span class="profile__level-number">25</span>
+            <span class="profile__level-text">левел:</span>
           </div>
           <a class="profile-catalog__button catalog-button" href="#">Позвать!</a>
         </li>
-        <li class="profile-catalog__item">
-          <a class="profile-name" href="#">
-            <h3 class="profile-name__link">Лариса Роговая</h3>
+        <li class="profile-catalog__item profile">
+          <a class="profile__name" href="#">
+            <h3 class="profile__name-link">Лариса Роговая</h3>
           </a>
-          <a class="profile-image" href="#">
-            <img class="profile-image__photo" src="https://via.placeholder.com/70x70" alt="">
+          <a class="profile__image" href="#">
+            <img class="profile__image-photo" src="https://via.placeholder.com/70x70" alt="">
           </a>
-          <div class="profile-likes">
-            <p class="profile-likes__info">25</p>
+          <div class="profile__likes">
+            <p class="profile__likes-info">25</p>
           </div>
-          <div class="profile-interests">
-            <p class="profile-interests__info">#образование #карьера #учеба #линкедин</p>
+          <div class="profile__interests">
+            <p class="profile__interests-info">#образование #карьера #учеба #линкедин</p>
           </div>
-          <div class="profile-countries">
-            <p class="profile-countries__title">Хочет посетить:</p>
-            <ul class="profile-countries__list">
-              <li class="profile-countries__item">Великобритания</li>
-              <li class="profile-countries__item">Германия</li>
+          <div class="profile__countries">
+            <p class="profile__countries-title">Хочет посетить:</p>
+            <ul class="profile__countries-list">
+              <li class="profile__countries-item">Великобритания</li>
+              <li class="profile__countries-item">Германия</li>
             </ul>
           </div>
-          <div class="profile-transport">
-            <p class="profile-transport__title">Транспорт:</p>
-            <ul class="profile-transport__list">
-              <li class="profile-transport__icon profile-transport__icon--plane">Самолет</li>
-              <li class="profile-transport__icon profile-transport__icon--bus">Автобус</li>
-              <li class="profile-transport__icon profile-transport__icon--cycle">Велосипед</li>
-              <li class="profile-transport__icon profile-transport__icon--foot">Пешком</li>
+          <div class="profile__transport">
+            <p class="profile__transport-title">Транспорт:</p>
+            <ul class="profile__transport-list">
+              <li class="profile__transport-icon profile__transport-icon--plane">Самолет</li>
+              <li class="profile__transport-icon profile__transport-icon--bus">Автобус</li>
+              <li class="profile__transport-icon profile__transport-icon--cycle">Велосипед</li>
+              <li class="profile__transport-icon profile__transport-icon--foot">Пешком</li>
             </ul>
           </div>
-          <div class="profile-level">
-            <span class="profile-level__number">50</span>
-            <span class="profile-level__text">level</span>
+          <div class="profile__level">
+            <span class="profile__level-number">50</span>
+            <span class="profile__level-text">левел:</span>
           </div>
           <a class="profile-catalog__button catalog-button" href="#">Позвать!</a>
         </li>
       </ul>
-      <a class="profile-catalog__button catalog-button" href="#">Показать еще</a>
+      <a class="profile-catalog__button catalog-button profile-catalog__button--more" href="#">Показать еще</a>
     </section>
 
     <section class="pagination">
@@ -415,7 +417,7 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__logo logo">
-        <img src="https://via.placeholder.com/96x15" alt="">
+        <img src="img/logo_mobile_footer.png" alt="Логотип сайта Погнали" width="96" height="15">
       </div>
       <div class="page-footer__social social">
         <ul class="social__list">
