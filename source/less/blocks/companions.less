@@ -2,10 +2,17 @@
   position: relative;
   background-color: @basic_blue_dark;
   color: @basic_white;
-  padding-top: 34px;
   background-image: url("/img/companions_background_2.png"), url("/img/companions_background_3.png");
   background-repeat: no-repeat, no-repeat;
-  background-position: top 37px right 25px, left -2px top 307px;
+  background-position: top 60px right 25px, left -2px top 330px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  margin-top: -30px;
+
+  @media (min-width: @tablet) {
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+  }
 }
 
 .companions::before {
@@ -16,47 +23,136 @@
   background-color: @special_blue_dark_2;
   border-radius: 0 20px 20px 0;
   position: absolute;
-  top: 37px;
+  top: 60px;
   left: 0;
-}
-
-.companions ul {
-  margin: 0;
-  padding: 0;
 }
 
 .companions__wrapper {
   position: relative;
+  padding-top: 60px;
   .wrapper;
+  .flex-column-center;
 
-  &--text {
-    padding-left: 24px;
-    padding-right: 29px;
-    padding-top: 34px;
-    margin-bottom: 54px;
+  @media (min-width: @tablet) {
+    padding-top: 141px;
+    align-items: flex-start;
+  }
+
+  @media (min-width: @desktop) {
+    flex-direction: row;
+    padding-top: 130px;
+    padding-bottom: 134px;
+    justify-content: space-between;
+  }
+}
+
+.companions__wrapper--text {
+  padding-left: 24px;
+  padding-right: 29px;
+  padding-top: 34px;
+  margin-bottom: 54px;
+
+  @media (min-width: @tablet) {
+    width: 429px;
+    align-items: flex-start;
+    padding-left: 34px;
+    padding-right: 34px;
+    padding-top: 0;
+    margin-left: 0;
+  }
+
+  @media (min-width: @desktop) {
+    margin-left: 70px;
+    padding: 0;
+    justify-content: flex-start;
   }
 }
 
 .companions__title {
   .title--orange;
+
+  @media (min-width: @tablet) {
+    .title--orange_tablet;
+    margin-bottom: 55px;
+  }
 }
 
 .companions__text {
   margin: 0;
   margin-bottom: 25px;
 
+  @media (min-width: @tablet) {
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 39px;
+  }
+
+  @media (min-width: @desktop) {
+    line-height: 33px;
+    margin-bottom: 42px;
+  }
+
   &--bold {
+    margin: 0;
     font-weight: 700;
+
+    @media (min-width: @tablet) {
+      width: 260px;
+      font-size: 21px;
+      line-height: 24px;
+    }
   }
 }
 
 .companions__user-list {
   .list-reset;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  .flex;
+
+  @media (min-width: @tablet) {
+    padding-left: 34px;
+    padding-right: 34px;
+    margin-bottom: 80px;
+    align-self: center;
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 0;
+    padding: 0;
+  }
+}
+
+.companions__user-item {
+  position: relative;
+  background-color: @basic_white;
+  margin-bottom: 10px;
+  border-radius: 10px;
+
+  @media (min-width: @tablet) {
+    width: 285px;
+    margin: 0 48px 0 0;
+  }
+
+  @media (min-width: @desktop) {
+    margin: 0 60px 0 0;
+  }
+}
+
+.companions__user-item:last-child {
+  @media (min-width: @tablet) {
+    margin: 0;
+  }
+
+  @media (min-width: @desktop) {
+    margin: 0;
+  }
 }
 
 .companions__user-card {
   background-color: @basic_white;
-  padding: 27px 36px 20px 46px;
+  padding: 27px 20px 20px 30px;
 }
 
 .companions__user-name {
@@ -88,4 +184,24 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
+}
+
+.companions__to-all {
+  margin-bottom: 30px;
+
+  @media (min-width: @tablet) {
+    .button-tablet;
+    align-self: center;
+    min-width: 618px;
+    margin-bottom: 87px;
+  }
+
+  @media (min-width: @desktop) {
+    .button-tablet;
+    position: absolute;
+    bottom: 134px;
+    width: 280px;
+    margin-left: 71px;
+    margin-bottom: 0;
+  }
 }
