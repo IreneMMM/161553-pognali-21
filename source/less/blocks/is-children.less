@@ -1,6 +1,56 @@
+.is-children {
+  margin-bottom: 24px;
+
+  @media (min-width: @tablet) {
+    order: -1;
+    padding-bottom: 34px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid @special_grey_dark_2;
+  }
+
+  @media (min-width: @desktop) {
+    border: none;
+  }
+}
+
 .is-children label {
   font-size: 15px;
   font-weight: 400;
   line-height: 15px;
+  letter-spacing: 0;
   color: @basic_blue_light;
+  text-transform: none;
+  position: relative;
+  padding-left: 39px;
+
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding-left: 58px;
+  }
+
+  @media (min-width: @desktop) {
+    padding-left: 59px;
+    margin-right: 0;
+  }
+}
+
+.is-children label::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 0;
+  width: 26px;
+  height: 26px;
+  border: 1px solid @basic_grey;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet) {
+    width: 36px;
+    height: 36px;
+  }
 }

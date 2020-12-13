@@ -1,3 +1,7 @@
+.countries-container {
+  background-color: @basic_white;
+}
+
 .countries-container span {
   color: @basic_blue_light;
   font-size: 14px;
@@ -5,8 +9,24 @@
   line-height: 18px;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+  }
 }
 
 .countries-container a {
   .link-reset;
+}
+
+.countries-container__options {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: auto;
+  flex-direction: column;
+  display: none;
+  width: 220px;
 }

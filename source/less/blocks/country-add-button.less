@@ -1,15 +1,12 @@
 .country-add-button {
   display: flex;
   box-sizing: border-box;
-  align-items: center;
-  background-color: @basic_background;
   border-radius: 4px;
-  height: 42px;
+  height: auto;
   min-width: 220px;
   padding: 0;
-  padding-left: 11px;
   border: none;
-  margin-bottom: 25px;
+  align-items: center;
 }
 
 .country-add-button__link {
@@ -21,4 +18,10 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: @basic_blue_light;
+
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.09em;
+  }
 }

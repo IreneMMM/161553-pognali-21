@@ -1,6 +1,26 @@
+.month {
+  .flex;
+  .list-reset;
+  justify-content: space-between;
+  padding: 11px 0;
+  margin-bottom: 22px;
+  border-top: 1px solid @special_grey_dark_2;
+  border-bottom: 1px solid @special_grey_dark_2;
+
+  @media (min-width: @tablet) {
+    margin-top: 40px;
+    padding: 27px 15px 23px;
+  }
+}
+
 .month__title {
   font-size: 20px;
   font-weight: 700;
   line-height: 20px;
   color: @basic_blue_light;
+
+  @media (min-width: @tablet) {
+    .page-title;
+    color: @basic_blue_light;
+  }
 }

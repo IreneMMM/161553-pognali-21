@@ -1,24 +1,63 @@
 .user-list {
+  .list-reset;
   padding: 0;
-  margin: 0 auto;
+  margin: 0  auto 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  @media (min-width: @tablet) {
+    margin: 0 100% 129px 57px;
+  }
+
+  @media (min-width: @desktop) {
+    display: none;
+  }
 }
 
-.user-list a {
+.user-list__link {
   .link-reset;
-}
-
-.login-link {
-  color: @basic_blue;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 30px;
-  text-transform: uppercase;
-}
-
-.phone-link,
-.email-link {
+  font: inherit;
   color: @basic_blue_dark;
-  font-weight: 500;
-  line-height: 16px;
+  font-weight: 700;
+  line-height: 18px;
   text-transform: uppercase;
+  position: relative;
+  padding-left: 61px;
+  display: flex;
+  align-items: center;
+  padding-top: 13px;
+  padding-bottom: 13px;
+
+  @media (min-width: @tablet) {
+    font-size: 28px;
+    line-height: 28px;
+  }
+}
+
+.user-list__link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45px;
+  height: 45px;
+  background-color: #121936;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.user-list__icon {
+  position: absolute;
+}
+
+.user-list__icon--phone {
+  top: 13px;
+  left: 13px;
+}
+
+.user-list__icon--email {
+  top: 16px;
+  left: 13px;
 }

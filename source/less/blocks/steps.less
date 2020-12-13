@@ -1,6 +1,5 @@
 .steps__list {
   .list-reset;
-  .wrapper;
   padding: 0;
 }
 
@@ -11,22 +10,67 @@
   color: @basic_blue_light;
   margin: 0;
   margin-bottom: 16px;
+
+  @media (min-width: @tablet) {
+    .page-title;
+    color: @basic_blue_light;
+    margin-bottom: 33px;
+  }
+}
+
+.steps__title br {
+  @media (min-width: @desktop) {
+    display: none;
+  }
 }
 
 .steps__description {
+  width: 95%;
   font-weight: 400;
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: @tablet) {
+    width: 85%;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 55px;
+    width: 600px;
+  }
 }
 
 .steps__item {
   background-color: @basic_white;
   border-radius: 10px;
-  padding: 24px 25px 13px 25px;
+  padding: 24px 25px 11px;
+  .flex-column;
+  align-items: flex-start;
+
+  @media (min-width: @tablet) {
+    border-radius: 30px;
+    padding: 48px 40px 56px;
+  }
+
+  @media (min-width: @desktop) {
+    border-radius: 60px;
+    padding: 100px 160px 106px;
+  }
 }
 
 .steps__item:not(:last-child) {
   margin-bottom: 10px;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 39px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 44px;
+  }
 }
 
 .steps__button {
@@ -39,6 +83,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+
+  @media (min-width: @tablet) {
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: none;
+  }
 }
 
 .steps__button--next {
@@ -46,12 +97,37 @@
   border-radius: 20px;
   height: 40px;
   margin-bottom: 13px;
+
+  @media (min-width: @tablet) {
+    height: 80px;
+    width: 286px;
+  }
 }
 
 .steps__button--send {
   font-family: inherit;
   border: none;
-  min-width: 230px;
   height: 40px;
   margin-bottom: 17px;
+
+  @media (min-width: @tablet) {
+    height: 80px;
+    width: 286px;
+    margin: 0;
+  }
+}
+
+.steps__button-wrapper {
+  width: 100%;
+
+  @media (min-width: @tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.steps__button--prev {
+  width: auto;
 }
