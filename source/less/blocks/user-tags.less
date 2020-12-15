@@ -1,8 +1,31 @@
+.user-tags {
+  width: 100%;
+  margin-bottom: 25px;
+
+  @media (min-width: @desktop) {
+    width: 58%;
+    margin: 0;
+  }
+}
+
+.user-tags__area {
+  @media (min-width: @desktop) {
+    margin: 0;
+  }
+}
+
 .user-tags__title {
   color: @basic_blue_light;
   font-weight: 700;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet) {
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+  }
 }
 
 .user-tags__text {

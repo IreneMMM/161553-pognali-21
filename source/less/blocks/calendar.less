@@ -1,6 +1,41 @@
-.calendar__table td,
-.calendar__table th {
+.calendar__table {
+  font-family: inherit;
+  margin-bottom: 22px;
+  width: 100%;
+  border-collapse: collapse;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 47px;
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 57px;
+  }
+}
+
+.calendar__table td,
+.calendar__table th {
+  width: 31px;
+  height: 31px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid @special_grey_dark_2;
+
+  @media (min-width: @tablet) {
+    width: 76px;
+    height: 68px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 142px;
+    height: 71px;
+  }
+}
+
+.calendar__table td {
+  opacity: 0.3;
 }

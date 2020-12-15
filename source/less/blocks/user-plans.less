@@ -1,21 +1,58 @@
 .user-plans {
   background-color: @special_blue_light;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+
+  @media (min-width: @tablet) {
+    border-top-right-radius: 60px;
+    border-top-left-radius: 60px;
+  }
 }
 
 .user-plans__wrapper {
   .wrapper;
+  .flex-column-center;
+  min-width: 270px;
   padding-top: 28px;
-  padding-bottom: 20px;
+  padding-bottom: 59px;
+
+  @media (min-width: @tablet) {
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 57px;
+    padding-bottom: 116px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 1440px;
+    padding-left: 124px;
+    padding-top: 54px;
+    padding-bottom: 108px;
+    padding-right: 60px;
+    box-sizing: border-box;
+  }
 }
 
 .user-plans__title {
   .title;
   color: @basic_blue_light;
   margin-bottom: 29px;
+  align-self: flex-start;
+
+  @media (min-width: @tablet) {
+    .page-title;
+    margin-bottom: 48px;
+    color: @basic_blue_light;
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 49px;
+  }
 }
 
 .user-plans__list {
   .list-reset;
+  width: 100%;
   margin: 0;
   padding: 0;
   color: @basic_blue_light;
@@ -25,16 +62,55 @@
   background-color: @basic_white;
   padding: 24px 25px 24px 25px;
   border-radius: 10px;
+
+  @media (min-width: @tablet) {
+    .flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop) {
+    align-items: center;
+    padding: 36px 43px;
+  }
+}
+
+.user-plans__item p:not(:first-child) {
+  @media (min-width: @tablet) {
+    margin-bottom: 0;
+  }
 }
 
 .user-plans__item:not(:last-child) {
   margin-bottom: 10px;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 11px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 15px;
+  }
 }
 
 .user-plans__countries {
   font-weight: 700;
+  line-height: 16px;
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: @tablet) {
+    .title;
+    width: 100%;
+    padding-bottom: 34px;
+    border-bottom: 1px solid @basic_grey;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: @desktop) {
+    width: auto;
+    border: none;
+    padding: 0;
+  }
 }
 
 .user-plans__companions,
@@ -46,10 +122,26 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 5px;
+
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+  }
 }
 
 .user-plans__dates {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.06em;
   margin-bottom: 24px;
+
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+  }
 }
 
 .user-plans__button-change {
@@ -63,4 +155,10 @@
   text-transform: uppercase;
   color: @basic_black;
   opacity: 0.3;
+
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+  }
 }

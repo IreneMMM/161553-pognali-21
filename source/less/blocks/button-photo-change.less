@@ -3,7 +3,6 @@
   background-color: @special_blue_light;
   color: @basic_blue;
   min-width: 270px;
-  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,4 +14,30 @@
   text-transform: uppercase;
   padding: 0;
   border: none;
+  width: 100%;
+  margin-top: 18px;
+  margin-bottom: 30px;
+  min-height: 40px;
+
+  @media (min-width: @tablet) {
+    margin-top: 50px;
+    margin-bottom: 52px;
+    letter-spacing: 0.09em;
+    border-radius: 10px;
+    min-height: 60px;
+  }
+
+  @media (min-width: @desktop) {
+    min-width: 0;
+    width: 190px;
+    padding-top: 16px;
+    padding-bottom: 13px;
+    margin: 0;
+    margin-left: 874px;
+    margin-right: 155px;
+    border-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    min-height: 47px;
+  }
 }

@@ -1,12 +1,11 @@
 .main-nav {
   background-color: @basic_white;
   padding-bottom: 41px;
-  padding-top: 27px;
+  padding-top: 19px;
   position: relative;
   top: 0;
   left: 0;
   width: auto;
-  min-height: 73px;
 
   @media (min-width: @tablet) {
     padding-top: 40px;
@@ -22,8 +21,8 @@
   .wrapper;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   z-index: 1;
 
@@ -93,9 +92,7 @@
   border: none;
   margin: 0 0 0 auto;
   padding: 0;
-  position: absolute;
-  top: 32px;
-  right: 26px;
+  position: relative;
 
   @media (min-width: @tablet) {
     position: relative;
@@ -134,8 +131,10 @@
   right: 0;
 }
 
-.main-nav--opened .main-nav {
+.main-nav--opened.main-nav__wrapper {
   background-color: none;
+  flex-direction: column;
+  position: relative;
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -145,6 +144,8 @@
   cursor: pointer;
   position: absolute;
   background-color: transparent;
+  top: 21px;
+  right: 25px;
 
   &::before,
   &::after {
@@ -174,15 +175,15 @@
     background-color: transparent;
   }
 
-  .main-nav--closed .site-list__item {
+  .main-nav--closed .site-list {
     display: none;
   }
 
-  .main-nav--closed .user-list__item {
+  .main-nav--closed .user-list {
     display: none;
   }
 
-  .main-nav--closed .social__item {
+  .main-nav--closed .social__list {
     display: none;
   }
 
@@ -193,6 +194,10 @@
     top: 457px;
     right: 24px;
     margin-bottom: 0;
+  }
+
+  .main-nav--closed .main-nav__login--only {
+    display: none;
   }
 }
 
@@ -215,15 +220,15 @@
     background-color: transparent;
   }
 
-  .main-nav--closed .site-list__item {
+  .main-nav--closed .site-list {
     display: none;
   }
 
-  .main-nav--closed .user-list__item {
+  .main-nav--closed .user-list {
     display: none;
   }
 
-  .main-nav--closed .social__item {
+  .main-nav--closed .social__list {
     display: none;
   }
 
@@ -262,4 +267,9 @@
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

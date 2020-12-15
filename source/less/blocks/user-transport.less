@@ -1,6 +1,39 @@
+.user-transport {
+  width: 100%;
+
+  @media (min-width: @tablet) {
+    order: -1;
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop) {
+    order: 0;
+    width: 30%;
+    margin-right: 0;
+  }
+}
+
 .user-transport__title {
   color: @basic_blue_light;
   font-weight: 700;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet) {
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 20px;
+    letter-spacing: 0.08em;
+  }
+
+  @media (min-width: @desktop) {
+    letter-spacing: 0.09em;
+  }
+}
+
+.user-transport__box {
+  @media (min-width: @desktop) {
+    margin: 0;
+  }
 }

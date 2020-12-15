@@ -38,7 +38,11 @@
 }
 
 .page-footer__social {
-  margin-bottom: 37px;
+  @media (max-width: @mobile_only) {
+    padding-bottom: 37px;
+    margin-bottom: 13px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
 }
 
 .page-footer__social ul {
