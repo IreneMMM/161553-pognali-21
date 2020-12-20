@@ -8,69 +8,81 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header page-header--catalog">
-    <div class="page-header__logo logo">
-      <a href="index.html">
+  <header class="page-header page-header--form">
+    <nav class="main-nav main-nav__wrapper main-nav--closed main-nav--nojs">
+
+      <a class="page-header__logo-main" href="index.html">
         <img src="img/logo_mobile.png" alt="Логотип сайта Погнали" width="96" height="15">
       </a>
-    </div>
-    <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="#">
-              О сервисе
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">
-              Направления
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">
-              Попутчики
-            </a>
-          </li>
-        </ul>
-        <ul class="main-nav__list user-list">
-          <li class="user-list__item user-list__item--login">
-            <a class="login-link" href="#">
-              Авторизация
-            </a>
-          </li>
-          <li class="user-list__item user-list__item--phone">
-            <a class="phone-link" href="tel:+88005558628">8 800 555-86-28</a>
-          </li>
-          <li class="user-list__item user-list__item--email">
-            <a class="email-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </li>
-        </ul>
 
-        <div class="main-nav__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в
-                Фейсбуке</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
-                Инстаграме</a>
-            </li>
-          </ul>
-        </div>
+
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="#">
+            О сервисе
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">
+            Направления
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">
+            Попутчики
+          </a>
+        </li>
+      </ul>
+
+      <div class="main-nav__login main-nav__login--only">
+        <a class="main-nav__login-link" href="#">
+          Авторизация
+        </a>
       </div>
+
+      <ul class="user-list">
+        <li class="user-list__item user-list__item--phone">
+          <a class="user-list__link" href="tel:+88005558628">
+            <svg class="user-list__icon user-list__icon--phone" width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M9.49995 1.08615C6.7035 1.08615 3.90033 1.55882 2.88322 2.50093C2.03934 3.28252 1.75804 4.66329 1.66321 5.53753C1.66321 5.53753 1.65015 5.62393 1.65015 5.66109C1.65015 6.00391 1.94445 6.27887 2.30427 6.27887C2.34678 6.27887 3.92002 6.15837 4.86851 6.08425C4.89134 6.08112 4.91434 6.07806 4.93716 6.07191C5.29043 6.0627 5.57505 5.7908 5.57505 5.45413L5.57822 4.237C5.57822 3.86014 5.90214 3.55737 6.3012 3.55737H12.6987C13.0978 3.55737 13.4218 3.86011 13.4218 4.237L13.425 5.45413C13.425 5.7908 13.7095 6.0627 14.0628 6.07191C14.0854 6.0781 14.1085 6.08112 14.1315 6.08425C15.0801 6.15834 16.6533 6.27887 16.6957 6.27887C17.0553 6.27887 17.3499 6.00391 17.3499 5.66109C17.3499 5.62393 17.3368 5.53753 17.3368 5.53753C17.2419 4.66329 16.9609 3.28255 16.117 2.50093C15.0996 1.55882 12.2964 1.08615 9.49995 1.08615ZM9.49995 9.11773C8.7771 9.11773 8.19164 9.67064 8.19164 10.3533C8.19164 11.036 8.7771 11.5889 9.49995 11.5889C10.2228 11.5889 10.8082 11.036 10.8082 10.3533C10.8082 9.67064 10.2228 9.11773 9.49995 9.11773ZM8.51873 6.33752V5.56528C8.51873 5.13902 8.15236 4.79304 7.70106 4.79304C7.24977 4.79304 6.8834 5.13905 6.8834 5.56528V6.33752L2.47095 10.7889C2.16689 11.07 1.97713 11.4622 1.97713 11.8948V13.1335C1.97713 13.8162 2.56264 14.3691 3.28545 14.3691H3.61254V15.1414C3.61254 15.5677 3.97895 15.9136 4.43025 15.9136C4.88154 15.9136 5.24792 15.5677 5.24792 15.1414V14.3691H13.752V15.1414C13.752 15.5677 14.1182 15.9136 14.5697 15.9136C15.021 15.9136 15.3873 15.5677 15.3873 15.1414V14.3691H15.7144C16.4373 14.3691 17.0227 13.8162 17.0227 13.1335V11.8948C17.0227 11.4622 16.833 11.07 16.5289 10.7889L12.1166 6.33752V5.56528C12.1166 5.13902 11.7502 4.79304 11.2989 4.79304C10.8476 4.79304 10.4812 5.13905 10.4812 5.56528V6.33752H8.51873ZM9.49995 7.8821C10.9456 7.8821 12.1166 8.98799 12.1166 10.3533C12.1166 11.7187 10.9457 12.8247 9.49995 12.8247C8.05426 12.8247 6.88336 11.7187 6.88336 10.3533C6.88336 8.98795 8.05426 7.8821 9.49995 7.8821Z" fill="#FFD74B"/>
+            </svg>
+            8 800 555-86-28
+          </a>
+        </li>
+        <li class="user-list__item user-list__item--email">
+          <a class="user-list__link" href="mailto:mail@htmlacademy.ru">
+            <svg class="user-list__icon user-list__icon--email" width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1393 10.4663L11.8089 6.5L16.1393 2.53365L15.5488 1.90264L9.24997 7.67188L2.95117 1.90264L2.36066 2.53365L6.69108 6.5L2.36066 10.4663L2.95117 11.0974L7.33081 7.08594L9.24997 8.84375L11.1691 7.08594L15.5488 11.0974L16.1393 10.4663ZM1.57593 0.25C0.76692 0.25 0.111084 0.948839 0.111084 1.80786V11.1921C0.111084 12.0525 0.7616 12.75 1.57593 12.75H16.924C17.733 12.75 18.3889 12.0512 18.3889 11.1921V1.80786C18.3889 0.947478 17.7383 0.25 16.924 0.25H1.57593Z" fill="#FFD74B"/>
+            </svg>
+            mail@htmlacademy.ru
+          </a>
+        </li>
+      </ul>
+
+      <ul class="page-header-social social__list">
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в
+            Фейсбуке</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
+            Инстаграме</a>
+        </li>
+      </ul>
+
     </nav>
   </header>
 
   <main class="page-main">
-    <h1 class="page-main__title">Попутчики</h1>
+    <div class="page-main__wrapper">
+      <h1 class="page-main__title">Попутчики</h1>
+    </div>
     <section class="country-filter">
       <div class="country-filter__wrapper">
         <img class="country-filter__logo" src="https://via.placeholder.com/15x10" alt="">
@@ -88,31 +100,272 @@
         </div>
         <div class="alphabet">
           <ul class="alphabet__list">
-            <li class="alphabet__item alphabet__item--current">А</li>
-            <li class="alphabet__item">Б</li>
-            <li class="alphabet__item">В</li>
-            <li class="alphabet__item">Г</li>
-            <li class="alphabet__item">Д</li>
-            <li class="alphabet__item">Е</li>
-            <li class="alphabet__item">З</li>
-            <li class="alphabet__item">И</li>
-            <li class="alphabet__item">К</li>
-            <li class="alphabet__item">Л</li>
-            <li class="alphabet__item">М</li>
-            <li class="alphabet__item">Н</li>
-            <li class="alphabet__item">О</li>
-            <li class="alphabet__item">П</li>
-            <li class="alphabet__item">Р</li>
-            <li class="alphabet__item">С</li>
-            <li class="alphabet__item">Т</li>
-            <li class="alphabet__item">У</li>
-            <li class="alphabet__item">Ф</li>
-            <li class="alphabet__item">Х</li>
-            <li class="alphabet__item">Ч</li>
-            <li class="alphabet__item">Ш</li>
-            <li class="alphabet__item">Э</li>
-            <li class="alphabet__item">Ю</li>
-            <li class="alphabet__item">Я</li>
+            <li class="alphabet__item alphabet__item--current">А
+              <ul class="alphabet__item-countries-list">
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Австралия</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="http://europe/austria">Австрия</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Азербайджан</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="http://europe/albania">Албания</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Алжир</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Ангола</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="http://europe/andorra">Андорра</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Антигуа и Барбуда</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Азербайджан</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Аргентина</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Армения</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Афганистан</a></li>
+
+              </ul>
+            </li>
+            <li class="alphabet__item">Б
+              <ul class="alphabet__item-countries-list">
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Багамские Острова</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Бангладеш</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Барбадос</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Бахрейн</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Белоруссия</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Белиз</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Бельгия</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Бенин</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Болгария</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Боливия</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Босния и Герцеговина</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Ботсвана</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Бразилия</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Бруней</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Буркина-Фасо</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Бурунди</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Бутан</a></li>
+              </ul>
+            </li>
+            <li class="alphabet__item">В
+              <ul class="alphabet__item-countries-list">
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Вануату</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Великобритания</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Венгрия</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Венесуэла</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Восточный Тимор</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Вьетнам</a></li>
+              </ul>
+            </li>
+            <li class="alphabet__item">Г
+              <ul class="alphabet__item-countries-list">
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Габон</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Гаити</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Гайана</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Гамбия</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Гана</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Гватемала</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Гвинея</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Гвинея-Бисау</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Германия</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Гондурас</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Гренада</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Греция</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Грузия</a></li>
+              </ul>
+            </li>
+            <li class="alphabet__item">Д
+              <ul class="alphabet__item-countries-list">
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Дания</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Джибути</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Доминика</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Доминикана</a></li>
+              </ul>
+            </li>
+            <li class="alphabet__item">Е
+              <ul class="alphabet__item-countries-list">
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Египет</a></li>
+              </ul>
+            </li>
+            <li class="alphabet__item">З
+              <ul class="alphabet__item-countries-list">
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Замбия</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Зимбабве</a></li>
+              </ul>
+            </li>
+            <li class="alphabet__item">И
+              <ul class="alphabet__item-countries-list">
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Израиль</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Индия</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Индонезия</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Иордания</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Ирак</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Иран</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Ирландия</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Исландия</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Испания</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Италия</a></li>
+              </ul>
+            </li>
+            <li class="alphabet__item">К
+              <ul class="alphabet__item-countries-list">
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Кабо-Верде</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Казахстан</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Камбоджа</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Камерун</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Канада</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Катар</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Кения</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Кипр</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Киргизия</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Кирибати</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Китай</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Колумбия</a></li>
+              </ul>
+            </li>
+            <li class="alphabet__item">Л
+              <ul class="alphabet__item-countries-list">
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Лаос</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Латвия</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Лесото</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Либерия</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Ливан</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Ливия</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Литва</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Лихтенштейн</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Люксембург</a></li>
+              </ul>
+            </li>
+            <li class="alphabet__item">М
+              <ul class="alphabet__item-countries-list">
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Маврикий</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Мавритания</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Мадагаскар</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Малави</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Малайзия</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Мали</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Мальдивы</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Мальта</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Марокко</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Мексика</a></li>
+              </ul>
+            </li>
+            <li class="alphabet__item">Н
+              <ul class="alphabet__item-countries-list">
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Намибия</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Науру</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Непал</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Нигер</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Нигерия</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Нидерланды</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Никарагуа</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Новая Зеландия</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Норвегия</a></li>
+              </ul>
+            </li>
+            <li class="alphabet__item">О
+              <ul class="alphabet__item-countries-list">
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">ОАЭ</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Оман</a></li>
+              </ul>
+            </li>
+            <li class="alphabet__item">П
+              <ul class="alphabet__item-countries-list">
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Пакистан</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Палау</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Панама</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Папуа — Новая Гвинея</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Парагвай</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Перу</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Польша</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Португалия</a></li>
+              </ul>
+            </li>
+            <li class="alphabet__item">Р
+              <ul class="alphabet__item-countries-list">
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Руанда</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Румыния</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Россия</a></li>
+              </ul>
+            </li>
+            <li class="alphabet__item">С
+              <ul class="alphabet__item-countries-list">
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Сальвадор</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Самоа</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Сан-Марино</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Саудовская Аравия</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Сейшелы</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Сенегал</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Сербия</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Сингапур</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Сирия</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Словакия</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Словения</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">США</a></li>
+              </ul>
+            </li>
+            <li class="alphabet__item">Т
+              <ul class="alphabet__item-countries-list">
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Таджикистан</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Таиланд</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Танзания</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Того</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Тонга</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Тринидад и Тобаго</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Тувалу</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Тунис</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Туркмения</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Турция</a></li>
+              </ul>
+            </li>
+            <li class="alphabet__item">У
+              <ul class="alphabet__item-countries-list">
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Уганда</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Узбекистан</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Украина</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Уругвай</a></li>
+              </ul>
+            </li>
+            <li class="alphabet__item">Ф
+              <ul class="alphabet__item-countries-list">
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Фиджи</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Филиппины</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Финляндия</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Франция</a></li>
+              </ul>
+            </li>
+            <li class="alphabet__item">Х
+              <ul class="alphabet__item-countries-list">
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Хорватия</a></li>
+              </ul>
+            </li>
+            <li class="alphabet__item">Ч
+              <ul class="alphabet__item-countries-list">
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Чад</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Черногория</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Чехия</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Чили</a></li>
+              </ul>
+            </li>
+            <li class="alphabet__item">Ш
+              <ul class="alphabet__item-countries-list">
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Швейцария</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Швеция</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Шри-Ланка</a></li>
+              </ul>
+            </li>
+            <li class="alphabet__item">Э
+              <ul class="alphabet__item-countries-list">
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Эквадор</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Эритрея</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Эсватини</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Эстония</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Эфиопия</a></li>
+              </ul>
+            </li>
+            <li class="alphabet__item">Ю
+              <ul class="alphabet__item-countries-list">
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">ЮАР</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Южный Судан</a></li>
+              </ul>
+            </li>
+            <li class="alphabet__item">Я
+              <ul class="alphabet__item-countries-list">
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Ямайка</a></li>
+                <li class="alphabet__item-countries-item"><a class="alphabet__item-countries-link" href="#">Япония</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
         <div class="countries">
@@ -152,266 +405,353 @@
             </li>
           </ul>
         </div>
-        <button class="country-filter__button" type="button">Свернуть</button>
       </div>
+      <button class="country-filter__button" type="button">Свернуть</button>
     </section>
 
-    <section class="choice-of-companion">
-      <div class="choice-of-companion__wrapper">
-        <h2 class="choice-of-companion__title">Подберите идеального попутчика</h2>
-        <form class="criteries" method="get" action="https://echo.htmlacademy.ru">
-          <ul class="criteries__list">
-            <li class="criteries__item dropdown">
-              <div class="dropdown__wrapper">
-                <span class="dropdown__name">Хобби</span>
-                <ul class="dropdown__list">
-                  <li class="dropdown__option">
-                    <label for="sport">Спортзал</label>
-                    <input class="filter-input" type="checkbox" id="sport" name="sport" checked>
-                  </li>
-                  <li class="dropdown__option">
-                    <label for="hookah">Кальян</label>
-                    <input class="filter-input" type="checkbox" id="hookah" name="hookah">
-                  </li>
-                  <li class="dropdown__option">
-                    <label for="sofa">Диван</label>
-                    <input class="filter-input" type="checkbox" id="sofa" name="sofa">
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="criteries__item dropdown">
-              <div class="dropdown__wrapper">
-                <span class="dropdown__name">Музыка</span>
-                <ul class="dropdown__list">
-                  <li class="dropdown__option">
-                    <label for="rock">Тяжелый рок</label>
-                    <input class="filter-input" type="checkbox" id="rock" name="rock" checked>
-                  </li>
-                  <li class="dropdown__option">
-                    <label for="rap">Русский рэп</label>
-                    <input class="filter-input" type="checkbox" id="rap" name="rap">
-                  </li>
-                  <li class="dropdown__option">
-                    <label for="dance">Евроденс</label>
-                    <input class="filter-input" type="checkbox" id="dance" name="dance">
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="criteries__item dropdown">
-              <div class="dropdown__wrapper">
-                <span class="dropdown__name">Еда</span>
-                <ul class="dropdown__list">
-                  <li class="dropdown__option">
-                    <label for="meat">Мясоед</label>
-                    <input class="filter-input" type="checkbox" id="meat" name="meat" checked>
-                  </li>
-                  <li class="dropdown__option">
-                    <label for="pp">Сидит на ПП</label>
-                    <input class="filter-input" type="checkbox" id="pp" name="pp">
-                  </li>
-                  <li class="dropdown__option">
-                    <label for="vegan">Веган-сыроед</label>
-                    <input class="filter-input" type="checkbox" id="vegan" name="vegan">
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="criteries__item dropdown">
-              <div class="dropdown__wrapper transport">
-                <span class="dropdown__name">Транспорт</span>
-                <ul class="transport__list">
-                  <li class="transport__icon transport__icon--plane">Самолет</li>
-                  <li class="transport__icon transport__icon--bus">Автобус</li>
-                  <li class="transport__icon transport__icon--cycle">Велосипед</li>
-                  <li class="transport__icon transport__icon--foot">Пешком</li>
-                </ul>
-              </div>
-            </li>
-            <li class="criteries__item dropdown">
-              <div class="dropdown__wrapper">
-                <span class="dropdown__name">Левел</span>
-                <div class="level-controls">
-                  <label class="min-level">
-                    <input type="text" name="min-level" value="30" aria-label="Поле для задания минимального уровня">
-                  </label>
-                  <label class="max-level">
-                    <input type="text" name="max-level" value="100" aria-label="Поле для задания максимального уровня">
-                  </label>
+    <div class="catalog-main catalog-main__wrapper">
+      <section class="choice-of-companion">
+        <div class="choice-of-companion__wrapper">
+          <h2 class="choice-of-companion__title">Подберите идеального попутчика</h2>
+          <form class="criteries" method="get" action="https://echo.htmlacademy.ru">
+            <ul class="criteries__list">
+              <li class="criteries__item dropdown">
+                <div class="dropdown__wrapper">
+                  <span class="dropdown__name">Хобби</span>
+                  <ul class="dropdown__list">
+                    <li class="dropdown__option">
+                      <label for="sport">Спортзал</label>
+                      <input class="visually-hidden" type="checkbox" id="sport" name="sport" checked>
+                    </li>
+                    <li class="dropdown__option">
+                      <label for="hookah">Кальян</label>
+                      <input class="visually-hidden" type="checkbox" id="hookah" name="hookah">
+                    </li>
+                    <li class="dropdown__option">
+                      <label for="sofa">Диван</label>
+                      <input class="visually-hidden" type="checkbox" id="sofa" name="sofa">
+                    </li>
+                  </ul>
                 </div>
-                <div class="range-controls">
-                  <div class="scale">
-                    <div class="bar"></div>
+              </li>
+
+              <li class="criteries__item dropdown">
+                <div class="dropdown__wrapper">
+                  <span class="dropdown__name">Музыка</span>
+                  <ul class="dropdown__list">
+                    <li class="dropdown__option">
+                      <label for="rock">Тяжелый рок</label>
+                      <input class="visually-hidden" type="checkbox" id="rock" name="rock" checked>
+                    </li>
+                    <li class="dropdown__option">
+                      <label for="rap">Русский рэп</label>
+                      <input class="visually-hidden" type="checkbox" id="rap" name="rap">
+                    </li>
+                    <li class="dropdown__option">
+                      <label for="dance">Евроденс</label>
+                      <input class="visually-hidden" type="checkbox" id="dance" name="dance">
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="criteries__item dropdown">
+                <div class="dropdown__wrapper">
+                  <span class="dropdown__name">Еда</span>
+                  <ul class="dropdown__list">
+                    <li class="dropdown__option">
+                      <label for="meat">Мясоед</label>
+                      <input class="visually-hidden" type="checkbox" id="meat" name="meat" checked>
+                    </li>
+                    <li class="dropdown__option">
+                      <label for="pp">Сидит на ПП</label>
+                      <input class="visually-hidden" type="checkbox" id="pp" name="pp">
+                    </li>
+                    <li class="dropdown__option">
+                      <label for="vegan">Веган-сыроед</label>
+                      <input class="visually-hidden" type="checkbox" id="vegan" name="vegan">
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="criteries__item dropdown">
+                <div class="dropdown__wrapper transport">
+                  <span class="dropdown__name">Транспорт</span>
+                  <ul class="transport__list">
+                    <li class="transport__icon transport__icon--plane">
+                      <label for="plane" class="transport__icon-label">
+                        <input class="transport__icon-checkbox visually-hidden" type="checkbox" name="transport" value="plane" id="plane" checked="">
+                      </label>
+                    </li>
+                    <li class="transport__icon transport__icon--bus">
+                      <label for="bus" class="transport__icon-label">
+                        <input class="transport__icon-checkbox visually-hidden" type="checkbox" name="transport" value="bus" id="bus" checked="">
+                      </label>
+                    </li>
+                    <li class="transport__icon transport__icon--cycle">
+                      <label for="cycle" class="transport__icon-label">
+                        <input class="transport__icon-checkbox visually-hidden" type="checkbox" name="transport" value="cycle" id="cycle">
+                      </label>
+                    </li>
+                    <li class="transport__icon transport__icon--foot">
+                      <label for="foot" class="transport__icon-label">
+                        <input class="transport__icon-checkbox visually-hidden" type="checkbox" name="transport" value="foot" id="foot" checked="">
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="criteries__item dropdown">
+                <div class="dropdown__wrapper">
+                  <span class="dropdown__name">Левел</span>
+                  <div class="level-controls">
+                    <label class="min-level">
+                      <input type="text" name="min-level" value="30" aria-label="Поле для задания минимального уровня">
+                    </label>
+                    <label class="max-level">
+                      <input type="text" name="max-level" value="100" aria-label="Поле для задания максимального уровня">
+                    </label>
                   </div>
-                  <div class="toggle toggle-min" tabindex="0" aria-label="Рычаг переключения уровня от"></div>
-                  <div class="toggle toggle-max" tabindex="0" aria-label="Рычаг переключения уровня до"></div>
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min" tabindex="0" aria-label="Рычаг переключения уровня от"></div>
+                    <div class="toggle toggle-max" tabindex="0" aria-label="Рычаг переключения уровня до"></div>
+                  </div>
                 </div>
-              </div>
-            </li>
-          </ul>
-          <input class="criteries__button catalog-button" type="submit" value="Показать">
-        </form>
-      </div>
-    </section>
+              </li>
+            </ul>
+            <input class="criteries__button catalog-button" type="submit" value="Показать">
+          </form>
+        </div>
+      </section>
 
-    <section class="profile-catalog">
-      <h2 class="visually-hidden">Каталог попутчиков</h2>
-      <ul class="profile-catalog__list">
-        <li class="profile-catalog__item profile">
-          <a class="profile__name" href="#">
-            <h3 class="profile__name-link">Таня Фирсова</h3>
-          </a>
-          <a class="profile__image" href="#">
-            <img class="profile__image-photo" src="https://via.placeholder.com/70x70" alt="">
-          </a>
-          <div class="profile__likes">
-            <p class="profile__likes-info">1,5 M</p>
-          </div>
-          <div class="profile__interests">
-            <p class="profile__interests-info">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
-          </div>
-          <div class="profile__countries">
-            <p class="profile__countries-title">Хочет посетить:</p>
-            <ul class="profile__countries-list">
-              <li class="profile__countries-item">Шри-ланка</li>
-              <li class="profile__countries-item">Тайланд</li>
-              <li class="profile__countries-item">Сейшелы</li>
-            </ul>
-          </div>
-          <div class="profile__transport">
-            <p class="profile__transport-title">Транспорт:</p>
-            <ul class="profile__transport-list">
-              <li class="profile__transport-icon profile__transport-icon--plane">Самолет</li>
-              <li class="profile__transport-icon profile__transport-icon--bus">Автобус</li>
-              <li class="profile__transport-icon profile__transport-icon--cycle">Велосипед</li>
-              <li class="profile__transport-icon profile__transport-icon--foot">Пешком</li>
-            </ul>
-          </div>
-          <div class="profile__level">
-            <span class="profile__level-number">99</span>
-            <span class="profile__level-text">левел:</span>
-          </div>
-          <a class="profile-catalog__button catalog-button" href="#">Позвать!</a>
-        </li>
+      <section class="profile-catalog">
+        <h2 class="visually-hidden">Каталог попутчиков</h2>
+        <ul class="profile-catalog__list">
+          <li class="profile-catalog__item profile">
+            <a class="profile__name" href="#">
+              <h3 class="profile__name-link">Таня <br/>Фирсова</h3>
+            </a>
+            <a class="profile__image" href="#">
+              <img class="profile__image-photo" src="https://via.placeholder.com/70x70" alt="">
+            </a>
+            <div class="profile__likes">
+              <p class="profile__likes-info">1,5 M</p>
+            </div>
+            <div class="profile__interests">
+              <p class="profile__interests-info">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+            </div>
+            <div class="profile__countries">
+              <p class="profile__countries-title">Хочет посетить:</p>
+              <ul class="profile__countries-list">
+                <li class="profile__countries-item">Шри-ланка</li>
+                <li class="profile__countries-item">Тайланд</li>
+                <li class="profile__countries-item">Сейшелы</li>
+              </ul>
+            </div>
+            <div class="profile__transport">
+              <p class="profile__transport-title">Транспорт:</p>
+              <ul class="profile__transport-list transport__list">
+                <li class="profile__transport-icon transport__icon transport__icon--plane">
+                  <label for="plane" class="transport__icon-label">
+                    <input class="transport__icon-checkbox visually-hidden" type="checkbox" name="transport" value="plane" id="plane" checked="">
+                  </label>
+                </li>
+                <li class="profile__transport-icon transport__icon transport__icon--bus">
+                  <label for="bus" class="transport__icon-label">
+                    <input class="transport__icon-checkbox visually-hidden" type="checkbox" name="transport" value="bus" id="bus" checked="">
+                  </label>
+                </li>
+                <li class="profile__transport-icon transport__icon transport__icon--cycle">
+                  <label for="cycle" class="transport__icon-label">
+                    <input class="transport__icon-checkbox visually-hidden" type="checkbox" name="transport" value="cycle" id="cycle">
+                  </label>
+                </li>
+                <li class="profile__transport-icon transport__icon transport__icon--foot">
+                  <label for="foot" class="transport__icon-label">
+                    <input class="transport__icon-checkbox visually-hidden" type="checkbox" name="transport" value="foot" id="foot" checked="">
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="profile__level">
+              <span class="profile__level-text">левел:</span>
+              <span class="profile__level-number">99</span>
+            </div>
+            <a class="profile-catalog__button catalog-button" href="#">Позвать!</a>
+          </li>
 
-        <li class="profile-catalog__item profile">
-          <a class="profile__name" href="#">
-            <h3 class="profile__name-link">Петя Демин</h3>
-          </a>
-          <a class="profile__image" href="#">
-            <img class="profile__image-photo" src="https://via.placeholder.com/70x70" alt="">
-          </a>
-          <div class="profile__likes">
-            <p class="profile__likes-info">1500</p>
-          </div>
-          <div class="profile__interests">
-            <p class="profile__interests-info">#бургер #бар #футбол #концерт #крафт</p>
-          </div>
-          <div class="profile__countries">
-            <p class="profile__countries-title">Хочет посетить:</p>
-            <ul class="profile__countries-list">
-              <li class="profile__countries-item">Бельгия</li>
-              <li class="profile__countries-item">Чехия</li>
-            </ul>
-          </div>
-          <div class="profile__transport">
-            <p class="profile__transport-title">Транспорт:</p>
-            <ul class="profile__transport-list">
-              <li class="profile__transport-icon profile__transport-icon--plane">Самолет</li>
-              <li class="profile__transport-icon profile__transport-icon--bus">Автобус</li>
-              <li class="profile__transport-icon profile__transport-icon--cycle">Велосипед</li>
-              <li class="profile__transport-icon profile__transport-icon--foot">Пешком</li>
-            </ul>
-          </div>
-          <div class="profile__level">
-            <span class="profile__level-number">80</span>
-            <span class="profile__level-text">левел:</span>
-          </div>
-          <a class="profile-catalog__button catalog-button" href="#">Позвать!</a>
-        </li>
-        <li class="profile-catalog__item profile">
-          <a class="profile__name" href="#">
-            <h3 class="profile__name-link">Марк Смолов</h3>
-          </a>
-          <a class="profile__image" href="#">
-            <img class="profile__image-photo" src="https://via.placeholder.com/70x70" alt="">
-          </a>
-          <div class="profile__likes">
-            <p class="profile__likes-info">170</p>
-          </div>
-          <div class="profile__interests">
-            <p class="profile__interests-info">#рэп #тату #хайпбист #кроссовки #суприм</p>
-          </div>
-          <div class="profile__countries">
-            <p class="profile__countries-title">Хочет посетить:</p>
-            <ul class="profile__countries-list">
-              <li class="profile__countries-item">США</li>
-              <li class="profile__countries-item">Австралия</li>
-              <li class="profile__countries-item">Доминика</li>
-            </ul>
-          </div>
-          <div class="profile__transport">
-            <p class="profile__transport-title">Транспорт:</p>
-            <ul class="profile__transport-list">
-              <li class="profile__transport-icon profile__transport-icon--plane">Самолет</li>
-              <li class="profile__transport-icon profile__transport-icon--bus">Автобус</li>
-              <li class="profile__transport-icon profile__transport-icon--cycle">Велосипед</li>
-              <li class="profile__transport-icon profile__transport-icon--foot">Пешком</li>
-            </ul>
-          </div>
-          <div class="profile__level">
-            <span class="profile__level-number">25</span>
-            <span class="profile__level-text">левел:</span>
-          </div>
-          <a class="profile-catalog__button catalog-button" href="#">Позвать!</a>
-        </li>
-        <li class="profile-catalog__item profile">
-          <a class="profile__name" href="#">
-            <h3 class="profile__name-link">Лариса Роговая</h3>
-          </a>
-          <a class="profile__image" href="#">
-            <img class="profile__image-photo" src="https://via.placeholder.com/70x70" alt="">
-          </a>
-          <div class="profile__likes">
-            <p class="profile__likes-info">25</p>
-          </div>
-          <div class="profile__interests">
-            <p class="profile__interests-info">#образование #карьера #учеба #линкедин</p>
-          </div>
-          <div class="profile__countries">
-            <p class="profile__countries-title">Хочет посетить:</p>
-            <ul class="profile__countries-list">
-              <li class="profile__countries-item">Великобритания</li>
-              <li class="profile__countries-item">Германия</li>
-            </ul>
-          </div>
-          <div class="profile__transport">
-            <p class="profile__transport-title">Транспорт:</p>
-            <ul class="profile__transport-list">
-              <li class="profile__transport-icon profile__transport-icon--plane">Самолет</li>
-              <li class="profile__transport-icon profile__transport-icon--bus">Автобус</li>
-              <li class="profile__transport-icon profile__transport-icon--cycle">Велосипед</li>
-              <li class="profile__transport-icon profile__transport-icon--foot">Пешком</li>
-            </ul>
-          </div>
-          <div class="profile__level">
-            <span class="profile__level-number">50</span>
-            <span class="profile__level-text">левел:</span>
-          </div>
-          <a class="profile-catalog__button catalog-button" href="#">Позвать!</a>
-        </li>
-      </ul>
-      <a class="profile-catalog__button catalog-button profile-catalog__button--more" href="#">Показать еще</a>
-    </section>
+          <li class="profile-catalog__item profile">
+            <a class="profile__name" href="#">
+              <h3 class="profile__name-link">Петя <br/>Демин</h3>
+            </a>
+            <a class="profile__image" href="#">
+              <img class="profile__image-photo" src="https://via.placeholder.com/70x70" alt="">
+            </a>
+            <div class="profile__likes">
+              <p class="profile__likes-info">1500</p>
+            </div>
+            <div class="profile__interests">
+              <p class="profile__interests-info">#бургер #бар #футбол #концерт #крафт</p>
+            </div>
+            <div class="profile__countries">
+              <p class="profile__countries-title">Хочет посетить:</p>
+              <ul class="profile__countries-list">
+                <li class="profile__countries-item">Бельгия</li>
+                <li class="profile__countries-item">Чехия</li>
+              </ul>
+            </div>
+            <div class="profile__transport">
+              <p class="profile__transport-title">Транспорт:</p>
+              <ul class="profile__transport-list transport__list">
+                <li class="profile__transport-icon transport__icon transport__icon--plane">
+                  <label for="plane" class="transport__icon-label">
+                    <input class="transport__icon-checkbox visually-hidden" type="checkbox" name="transport" value="plane" id="plane" checked="">
+                  </label>
+                </li>
+                <li class="profile__transport-icon transport__icon transport__icon--bus">
+                  <label for="bus" class="transport__icon-label">
+                    <input class="transport__icon-checkbox visually-hidden" type="checkbox" name="transport" value="bus" id="bus" checked="">
+                  </label>
+                </li>
+                <li class="profile__transport-icon transport__icon transport__icon--cycle">
+                  <label for="cycle" class="transport__icon-label">
+                    <input class="transport__icon-checkbox visually-hidden" type="checkbox" name="transport" value="cycle" id="cycle">
+                  </label>
+                </li>
+                <li class="profile__transport-icon transport__icon transport__icon--foot">
+                  <label for="foot" class="transport__icon-label">
+                    <input class="transport__icon-checkbox visually-hidden" type="checkbox" name="transport" value="foot" id="foot" checked="">
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="profile__level">
+              <span class="profile__level-text">левел:</span>
+              <span class="profile__level-number">80</span>
+            </div>
+            <a class="profile-catalog__button catalog-button" href="#">Позвать!</a>
+          </li>
+          <li class="profile-catalog__item profile">
+            <a class="profile__name" href="#">
+              <h3 class="profile__name-link">Марк <br/>Смолов</h3>
+            </a>
+            <a class="profile__image" href="#">
+              <img class="profile__image-photo" src="https://via.placeholder.com/70x70" alt="">
+            </a>
+            <div class="profile__likes">
+              <p class="profile__likes-info">170</p>
+            </div>
+            <div class="profile__interests">
+              <p class="profile__interests-info">#рэп #тату #хайпбист #кроссовки #суприм</p>
+            </div>
+            <div class="profile__countries">
+              <p class="profile__countries-title">Хочет посетить:</p>
+              <ul class="profile__countries-list">
+                <li class="profile__countries-item">США</li>
+                <li class="profile__countries-item">Австралия</li>
+                <li class="profile__countries-item">Доминика</li>
+              </ul>
+            </div>
+            <div class="profile__transport">
+              <p class="profile__transport-title">Транспорт:</p>
+              <ul class="profile__transport-list transport__list">
+                <li class="profile__transport-icon transport__icon transport__icon--plane">
+                  <label for="plane" class="transport__icon-label">
+                    <input class="transport__icon-checkbox visually-hidden" type="checkbox" name="transport" value="plane" id="plane" checked="">
+                  </label>
+                </li>
+                <li class="profile__transport-icon transport__icon transport__icon--bus">
+                  <label for="bus" class="transport__icon-label">
+                    <input class="transport__icon-checkbox visually-hidden" type="checkbox" name="transport" value="bus" id="bus" checked="">
+                  </label>
+                </li>
+                <li class="profile__transport-icon transport__icon transport__icon--cycle">
+                  <label for="cycle" class="transport__icon-label">
+                    <input class="transport__icon-checkbox visually-hidden" type="checkbox" name="transport" value="cycle" id="cycle">
+                  </label>
+                </li>
+                <li class="profile__transport-icon transport__icon transport__icon--foot">
+                  <label for="foot" class="transport__icon-label">
+                    <input class="transport__icon-checkbox visually-hidden" type="checkbox" name="transport" value="foot" id="foot" checked="">
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="profile__level">
+              <span class="profile__level-text">левел:</span>
+              <span class="profile__level-number">25</span>
+            </div>
+            <a class="profile-catalog__button catalog-button" href="#">Позвать!</a>
+          </li>
+          <li class="profile-catalog__item profile">
+            <a class="profile__name" href="#">
+              <h3 class="profile__name-link">Лариса <br/>Роговая</h3>
+            </a>
+            <a class="profile__image" href="#">
+              <img class="profile__image-photo" src="https://via.placeholder.com/70x70" alt="">
+            </a>
+            <div class="profile__likes">
+              <p class="profile__likes-info">23</p>
+            </div>
+            <div class="profile__interests">
+              <p class="profile__interests-info">#образование #карьера #учеба #линкедин</p>
+            </div>
+            <div class="profile__countries">
+              <p class="profile__countries-title">Хочет посетить:</p>
+              <ul class="profile__countries-list">
+                <li class="profile__countries-item">Великобритания</li>
+                <li class="profile__countries-item">Германия</li>
+              </ul>
+            </div>
+            <div class="profile__transport">
+              <p class="profile__transport-title">Транспорт:</p>
+              <ul class="profile__transport-list transport__list">
+                <li class="profile__transport-icon transport__icon transport__icon--plane">
+                  <label for="plane" class="transport__icon-label">
+                    <input class="transport__icon-checkbox visually-hidden" type="checkbox" name="transport" value="plane" id="plane" checked="">
+                  </label>
+                </li>
+                <li class="profile__transport-icon transport__icon transport__icon--bus">
+                  <label for="bus" class="transport__icon-label">
+                    <input class="transport__icon-checkbox visually-hidden" type="checkbox" name="transport" value="bus" id="bus" checked="">
+                  </label>
+                </li>
+                <li class="profile__transport-icon transport__icon transport__icon--cycle">
+                  <label for="cycle" class="transport__icon-label">
+                    <input class="transport__icon-checkbox visually-hidden" type="checkbox" name="transport" value="cycle" id="cycle">
+                  </label>
+                </li>
+                <li class="profile__transport-icon transport__icon transport__icon--foot">
+                  <label for="foot" class="transport__icon-label">
+                    <input class="transport__icon-checkbox visually-hidden" type="checkbox" name="transport" value="foot" id="foot" checked="">
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="profile__level">
+              <span class="profile__level-text">левел:</span>
+              <span class="profile__level-number">50</span>
+            </div>
+            <a class="profile-catalog__button catalog-button" href="#">Позвать!</a>
+          </li>
+        </ul>
+        <a class="profile-catalog__button catalog-button profile-catalog__button--more" href="#">Показать еще</a>
+      </section>
 
-    <section class="pagination">
-      <h2 class="visually-hidden">Нумерация страниц</h2>
-      <div class="pagination__wrapper">
-        <a class="pagination__arrow pagination__arrow--prev" href="#" aria-label="Перейти на страницу назад"></a>
-        <a class="pagination__arrow pagination__arrow--next" href="#" aria-label="Перейти на страницу вперед"></a>
-      </div>
-    </section>
+      <section class="pagination">
+        <h2 class="visually-hidden">Нумерация страниц</h2>
+        <div class="pagination__wrapper">
+          <li class="pagination__item pagination__item--active"><a class="pagination__link"></a>1</li>
+          <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+          <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+          <li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
+          <a class="pagination__arrow pagination__arrow--prev" href="#" aria-label="Перейти на страницу назад"></a>
+          <a class="pagination__arrow pagination__arrow--next" href="#" aria-label="Перейти на страницу вперед"></a>
+        </div>
+      </section>
+    </div>
   </main>
 
   <footer class="page-footer">
@@ -442,6 +782,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/header.js"></script>
 </body>
 
 </html>

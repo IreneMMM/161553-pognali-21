@@ -1,7 +1,31 @@
+.continents {
+  @media (min-width: @tablet) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  @media (min-width: @desktop) {
+    grid-column: 3;
+  }
+}
+
 .continents__list {
   .list-reset;
   padding: 0;
   margin: 0;
+  margin-bottom: 21px;
+
+  @media (min-width: @tablet) {
+    .flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop) {
+    width: 380px;
+  }
 }
 
 .continents__item {
@@ -12,6 +36,11 @@
   line-height: 18px;
   text-transform: uppercase;
   margin-bottom: 9px;
+
+  @media (min-width: @tablet) {
+    .title_20;
+    margin-bottom: 0;
+  }
 }
 
 .continents__item--chosen {

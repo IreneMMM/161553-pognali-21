@@ -1,10 +1,49 @@
+.criteries {
+  @media (min-width: @desktop) {
+    padding-top: 0;
+    border: none;
+  }
+}
+
 .criteries__list {
   .list-reset;
   padding: 0;
   margin: 0;
   margin-bottom: 21px;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 36px;
+    border-top: 1px solid #f3c72b;
+    border-bottom: 1px solid #f3c72b;
+    padding-top: 34px;
+    padding-bottom: 37px;
+    .flex-column;
+    flex-wrap: nowrap;
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 38px;
+    border: none;
+    padding: 0;
+  }
+}
+
+.criteries__item {
+  padding-top: 12px;
+  padding-bottom: 21px;
+  border-top: 1px solid #f3c72b;
+
+  @media (min-width: @tablet) {
+    border: none;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 32px;
+  }
 }
 
 .criteries__button {
   background-color: @basic_white;
+  width: 100%;
 }
