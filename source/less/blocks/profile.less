@@ -106,7 +106,7 @@
   }
 }
 
-.profile__interests {
+.profile-interests {
   width: 100%;
   margin-bottom: 16px;
 
@@ -117,7 +117,11 @@
   }
 }
 
-.profile__interests-info {
+.profile-interests__list {
+  .list-reset;
+}
+
+.profile-interests__item {
   font-size: 15px;
   font-weight: 400;
   line-height: 18px;
@@ -200,7 +204,6 @@
   }
 }
 
-
 .profile__transport-title {
   font-size: 15px;
   font-weight: 400;
@@ -216,6 +219,10 @@
 }
 
 .profile__transport-list {
+  .list-reset;
+  padding: 0;
+  .flex;
+
   @media (min-width: @tablet) {
     .flex-column;
   }

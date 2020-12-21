@@ -62,20 +62,21 @@
         </li>
       </ul>
 
-      <ul class="page-header-social social__list">
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в
-            Фейсбуке</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
-            Инстаграме</a>
-        </li>
-      </ul>
-
+      <div class="page-header-social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в
+              Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
+              Инстаграме</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
 
@@ -539,8 +540,15 @@
             <div class="profile__likes">
               <p class="profile__likes-info">1,5 M</p>
             </div>
-            <div class="profile__interests">
-              <p class="profile__interests-info">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+            <div class="profile-interests">
+              <ul class="profile-interests__list">
+                <li class="profile-interests__item">#ЗОЖ</li>
+                <li class="profile-interests__item">#ПП</li>
+                <li class="profile-interests__item">#Фитнес</li>
+                <li class="profile-interests__item">#пляж</li>
+                <li class="profile-interests__item">#авокадо</li>
+                <li class="profile-interests__item">#смузи</li>
+              </ul>
             </div>
             <div class="profile__countries">
               <p class="profile__countries-title">Хочет посетить:</p>
@@ -552,26 +560,14 @@
             </div>
             <div class="profile__transport">
               <p class="profile__transport-title">Транспорт:</p>
-              <ul class="profile__transport-list transport__list">
+              <ul class="profile__transport-list transport">
                 <li class="profile__transport-icon transport__icon transport__icon--plane">
-                  <label for="plane" class="transport__icon-label">
-                    <input class="transport__icon-checkbox visually-hidden" type="checkbox" name="transport" value="plane" id="plane" checked="">
-                  </label>
                 </li>
                 <li class="profile__transport-icon transport__icon transport__icon--bus">
-                  <label for="bus" class="transport__icon-label">
-                    <input class="transport__icon-checkbox visually-hidden" type="checkbox" name="transport" value="bus" id="bus" checked="">
-                  </label>
                 </li>
                 <li class="profile__transport-icon transport__icon transport__icon--cycle">
-                  <label for="cycle" class="transport__icon-label">
-                    <input class="transport__icon-checkbox visually-hidden" type="checkbox" name="transport" value="cycle" id="cycle">
-                  </label>
                 </li>
                 <li class="profile__transport-icon transport__icon transport__icon--foot">
-                  <label for="foot" class="transport__icon-label">
-                    <input class="transport__icon-checkbox visually-hidden" type="checkbox" name="transport" value="foot" id="foot" checked="">
-                  </label>
                 </li>
               </ul>
             </div>
@@ -592,8 +588,14 @@
             <div class="profile__likes">
               <p class="profile__likes-info">1500</p>
             </div>
-            <div class="profile__interests">
-              <p class="profile__interests-info">#бургер #бар #футбол #концерт #крафт</p>
+            <div class="profile-interests">
+              <ul class="profile-interests__list">
+                <li class="profile-interests__item">#бургер</li>
+                <li class="profile-interests__item">#бар</li>
+                <li class="profile-interests__item">#футбол</li>
+                <li class="profile-interests__item">#концерт</li>
+                <li class="profile-interests__item">#крафт</li>
+              </ul>
             </div>
             <div class="profile__countries">
               <p class="profile__countries-title">Хочет посетить:</p>
@@ -604,26 +606,14 @@
             </div>
             <div class="profile__transport">
               <p class="profile__transport-title">Транспорт:</p>
-              <ul class="profile__transport-list transport__list">
+              <ul class="profile__transport-list transport">
                 <li class="profile__transport-icon transport__icon transport__icon--plane">
-                  <label for="plane" class="transport__icon-label">
-                    <input class="transport__icon-checkbox visually-hidden" type="checkbox" name="transport" value="plane" id="plane" checked="">
-                  </label>
                 </li>
                 <li class="profile__transport-icon transport__icon transport__icon--bus">
-                  <label for="bus" class="transport__icon-label">
-                    <input class="transport__icon-checkbox visually-hidden" type="checkbox" name="transport" value="bus" id="bus" checked="">
-                  </label>
                 </li>
                 <li class="profile__transport-icon transport__icon transport__icon--cycle">
-                  <label for="cycle" class="transport__icon-label">
-                    <input class="transport__icon-checkbox visually-hidden" type="checkbox" name="transport" value="cycle" id="cycle">
-                  </label>
                 </li>
                 <li class="profile__transport-icon transport__icon transport__icon--foot">
-                  <label for="foot" class="transport__icon-label">
-                    <input class="transport__icon-checkbox visually-hidden" type="checkbox" name="transport" value="foot" id="foot" checked="">
-                  </label>
                 </li>
               </ul>
             </div>
@@ -643,8 +633,14 @@
             <div class="profile__likes">
               <p class="profile__likes-info">170</p>
             </div>
-            <div class="profile__interests">
-              <p class="profile__interests-info">#рэп #тату #хайпбист #кроссовки #суприм</p>
+            <div class="profile-interests">
+              <ul class="profile-interests__list">
+                <li class="profile-interests__item">#рэп</li>
+                <li class="profile-interests__item">#тату</li>
+                <li class="profile-interests__item">#хайпбист</li>
+                <li class="profile-interests__item">#кроссовки</li>
+                <li class="profile-interests__item">#суприм</li>
+              </ul>
             </div>
             <div class="profile__countries">
               <p class="profile__countries-title">Хочет посетить:</p>
@@ -656,26 +652,14 @@
             </div>
             <div class="profile__transport">
               <p class="profile__transport-title">Транспорт:</p>
-              <ul class="profile__transport-list transport__list">
+              <ul class="profile__transport-list transport">
                 <li class="profile__transport-icon transport__icon transport__icon--plane">
-                  <label for="plane" class="transport__icon-label">
-                    <input class="transport__icon-checkbox visually-hidden" type="checkbox" name="transport" value="plane" id="plane" checked="">
-                  </label>
                 </li>
                 <li class="profile__transport-icon transport__icon transport__icon--bus">
-                  <label for="bus" class="transport__icon-label">
-                    <input class="transport__icon-checkbox visually-hidden" type="checkbox" name="transport" value="bus" id="bus" checked="">
-                  </label>
                 </li>
                 <li class="profile__transport-icon transport__icon transport__icon--cycle">
-                  <label for="cycle" class="transport__icon-label">
-                    <input class="transport__icon-checkbox visually-hidden" type="checkbox" name="transport" value="cycle" id="cycle">
-                  </label>
                 </li>
                 <li class="profile__transport-icon transport__icon transport__icon--foot">
-                  <label for="foot" class="transport__icon-label">
-                    <input class="transport__icon-checkbox visually-hidden" type="checkbox" name="transport" value="foot" id="foot" checked="">
-                  </label>
                 </li>
               </ul>
             </div>
@@ -695,8 +679,13 @@
             <div class="profile__likes">
               <p class="profile__likes-info">23</p>
             </div>
-            <div class="profile__interests">
-              <p class="profile__interests-info">#образование #карьера #учеба #линкедин</p>
+            <div class="profile-interests">
+              <ul class="profile-interests__list">
+                <li class="profile-interests__item">#образование</li>
+                <li class="profile-interests__item">#карьера</li>
+                <li class="profile-interests__item">#учеба</li>
+                <li class="profile-interests__item">#линкедин</li>
+              </ul>
             </div>
             <div class="profile__countries">
               <p class="profile__countries-title">Хочет посетить:</p>
@@ -707,26 +696,14 @@
             </div>
             <div class="profile__transport">
               <p class="profile__transport-title">Транспорт:</p>
-              <ul class="profile__transport-list transport__list">
+              <ul class="profile__transport-list transport">
                 <li class="profile__transport-icon transport__icon transport__icon--plane">
-                  <label for="plane" class="transport__icon-label">
-                    <input class="transport__icon-checkbox visually-hidden" type="checkbox" name="transport" value="plane" id="plane" checked="">
-                  </label>
                 </li>
                 <li class="profile__transport-icon transport__icon transport__icon--bus">
-                  <label for="bus" class="transport__icon-label">
-                    <input class="transport__icon-checkbox visually-hidden" type="checkbox" name="transport" value="bus" id="bus" checked="">
-                  </label>
                 </li>
                 <li class="profile__transport-icon transport__icon transport__icon--cycle">
-                  <label for="cycle" class="transport__icon-label">
-                    <input class="transport__icon-checkbox visually-hidden" type="checkbox" name="transport" value="cycle" id="cycle">
-                  </label>
                 </li>
                 <li class="profile__transport-icon transport__icon transport__icon--foot">
-                  <label for="foot" class="transport__icon-label">
-                    <input class="transport__icon-checkbox visually-hidden" type="checkbox" name="transport" value="foot" id="foot" checked="">
-                  </label>
                 </li>
               </ul>
             </div>
@@ -742,14 +719,14 @@
 
       <section class="pagination">
         <h2 class="visually-hidden">Нумерация страниц</h2>
-        <div class="pagination__wrapper">
+        <ul class="pagination__wrapper">
           <li class="pagination__item pagination__item--active"><a class="pagination__link"></a>1</li>
           <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
           <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
           <li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
-          <a class="pagination__arrow pagination__arrow--prev" href="#" aria-label="Перейти на страницу назад"></a>
-          <a class="pagination__arrow pagination__arrow--next" href="#" aria-label="Перейти на страницу вперед"></a>
-        </div>
+          <li class="pagination__arrow"><a class="pagination__arrow pagination__arrow--prev" href="#" aria-label="Перейти на страницу назад"></a></li>
+          <li class="pagination__arrow"><a class="pagination__arrow pagination__arrow pagination__arrow--next" href="#" aria-label="Перейти на страницу вперед"></a></li>
+        </ul>
       </section>
     </div>
   </main>
