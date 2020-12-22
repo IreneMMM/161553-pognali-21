@@ -1,11 +1,24 @@
 .profile-catalog {
-  margin-bottom: 18px;
+  .wrapper;
+
+  @media (min-width: @tablet) {
+    width: 100%;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 0;
+    margin: 0;
+    width: 950px;
+    order: -2;
+  }
 }
 
 .profile-catalog__list {
   .list-reset;
   margin: 0;
   padding: 0;
+  margin-bottom: 18px;
 }
 
 .profile-catalog__item {
@@ -16,8 +29,26 @@
 .profile-catalog__button {
   .link-reset;
   background-color: @basic_yellow;
+  width: 100%;
+
+  @media (min-width: @tablet) {
+    width: 150px;
+    grid-column: 2;
+    grid-row: 3;
+  }
 }
 
 .profile-catalog__button--more {
   background-color: transparent;
+  height: min-content;
+  margin: 0 auto 18px auto;
+
+  @media (min-width: @tablet) {
+    margin: 0 auto 52px auto;
+  }
+
+  @media (min-width: @desktop) {
+    margin: 0 auto 63px auto;
+    padding-left: 60px;
+  }
 }

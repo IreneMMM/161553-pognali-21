@@ -1,15 +1,91 @@
 .profile {
   padding: 14px 18px;
-  margin: 10px 25px;
+  margin-bottom: 10px;
+  .flex;
+  position: relative;
+
+  @media (min-width: @tablet) {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
+    padding: 35px 25px 25px 35px;
+    margin-bottom: 39px;
+  }
+}
+
+.profile:last-child {
+  @media (min-width: @desktop) {
+    margin-bottom: 66px;
+  }
 }
 
 .profile__name {
   .link-reset;
+  margin-bottom: 12px;
+  flex-grow: 1;
+
+  @media (min-width: @tablet) {
+    width: 300px;
+    flex-grow: 0;
+    grid-column: 2;
+    grid-row: 1;
+    margin-bottom: 19px;
+  }
 }
 
 .profile__name-link {
-  .profile-name;
+  .title_20;
+  color: @basic_blue_light;
   margin: 0;
+
+  @media (min-width: @tablet) {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+}
+
+.profile__name-link br {
+  @media (min-width: @tablet) {
+    display: none;
+  }
+}
+
+.profile__image {
+  order: -2;
+  margin-bottom: 12px;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 22px;
+    grid-column: 1;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+}
+
+.profile__image-photo {
+  border-radius: 50%;
+  margin-right: 16px;
+
+  @media (min-width: @tablet) {
+    width: 190px;
+    height: 190px;
+    border-radius: 20px;
+  }
+}
+
+.profile__likes {
+  position: absolute;
+  top: 62px;
+  left: 66px;
+  padding-left: 37px;
+
+  @media (min-width: @tablet) {
+    position: relative;
+    grid-column: 2;
+    grid-row: 3;
+    top: 0;
+  }
 }
 
 .profile__likes-info {
@@ -19,25 +95,49 @@
   line-height: 16px;
   text-transform: uppercase;
   margin: 0;
+
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 20px;
+    position: absolute;
+    top: 15px;
+    left: 83px;
+    padding-left: 56px;
+  }
 }
 
-.profile__interests-info {
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 18px;
-  margin: 0;
-  margin-bottom: 16px;
+.profile__countries {
+  width: 100%;
+
+  @media (min-width: @tablet) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }
 
 .profile__countries-title {
-  .lowercase-title;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 16px;
+  margin: 0;
   margin-bottom: 18px;
+  color: @basic_blue_light;
+  text-transform: lowercase;
+
+  @media (min-width: @tablet) {
+    color: @special_grey;
+  }
 }
 
 .profile__countries-list {
   .list-reset;
   padding: 0;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
+
+  @media (min-width: @tablet) {
+    .flex;
+    margin-bottom: 0;
+  }
 }
 
 .profile__countries-item {
@@ -46,18 +146,105 @@
   line-height: 16px;
   color: @basic_blue_light;
   text-transform: uppercase;
+  padding-left: 40px;
+
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 50px;
+    margin-right: 25px;
+  }
+}
+
+.profile__countries-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.profile__transport {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 13px;
+
+  @media (min-width: @tablet) {
+    margin-left: auto;
+    height: 118px;
+    grid-column: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
 }
 
 .profile__transport-title {
-  .lowercase-title;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 16px;
+  margin: 0;
   margin-bottom: 18px;
+  color: @basic_blue_light;
+  text-transform: lowercase;
+
+  @media (min-width: @tablet) {
+    display: none;
+  }
+}
+
+.profile__transport-list {
+  .list-reset;
+  padding: 0;
+  .flex;
+
+  @media (min-width: @tablet) {
+    .flex-column;
+  }
+}
+
+.profile__transport-icon {
+  background-color: @basic_background;
+
+  @media (min-width: @tablet) {
+    background-color: transparent;
+  }
+}
+
+.profile__level {
+  width: 60px;
+  height: 60px;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 13px;
+
+  @media (min-width: @tablet) {
+    grid-column: 3;
+    grid-row: 3;
+    margin-top: -15px;
+  }
 }
 
 .profile__level-number {
   .title;
   color: @basic_blue_light;
+
+  @media (min-width: @tablet) {
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid @special_orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .profile__level-text {
-  .lowercase-title;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 16px;
+  margin: 0;
+  color: @basic_blue_light;
+
+  @media (min-width: @tablet) {
+    display: none;
+  }
 }

@@ -2,10 +2,10 @@
   background-color: #182044;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
-}
+  position: relative;
+  z-index: 2;
 
-@media (min-width: 768px) {
-  .page-main__wrapper {
+  @media (min-width: @tablet) {
     border-bottom-right-radius: 60px;
     border-bottom-left-radius: 60px;
   }
@@ -19,7 +19,7 @@
   padding-bottom: 21px;
   padding-top: 13px;
 
-  @media (min-width: 768px) {
+  @media (min-width: @tablet) {
     margin: 0 auto;
     padding-left: 75px;
     padding-right: 40px;
@@ -29,7 +29,7 @@
     padding-top: 85px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: @desktop) {
     width: 1320px;
     margin: 0 auto;
     padding-left: 124px;
