@@ -16,18 +16,18 @@
 
 .registration__wrapper {
   .wrapper;
-  padding-top: 102px;
-  padding-bottom: 29px;
+  padding-top: 100px;
+  padding-bottom: 25px;
   .flex-column-center;
 
   @media (min-width: @tablet) {
     padding-top: 136px;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
   }
 
   @media (min-width: @desktop) {
     padding-top: 169px;
-    padding-bottom: 103px;
+    padding-bottom: 120px;
   }
 }
 
@@ -46,7 +46,7 @@
 }
 
 .registration__wrapper-text {
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   text-align: center;
 
   @media (min-width: @tablet) {
@@ -59,10 +59,26 @@
   }
 }
 
+.registration__wrapper-questions {
+  margin-bottom: 16px;
+  text-align: center;
+
+  @media (min-width: @tablet) {
+    width: auto;
+    margin-bottom: 50px;
+    display: inline-flex;
+    column-gap: 10px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 60px;
+  }
+}
+
 .registration__text {
   margin: 0;
   padding: 0;
-  width: 210px;
+  width: 215px;
   text-align: center;
 
   @media (min-width: @tablet) {
@@ -84,14 +100,104 @@
   }
 }
 
+.registration__text:nth-child(3) {
+  @media (min-width: @desktop) {
+    padding-left: 20px;
+  }
+}
+
 .registration__form {
+  position: relative;
   margin-bottom: 29px;
 
   @media (min-width: @tablet) {
-    margin-bottom: 60px;
+    margin-bottom: 59px;
   }
 
   @media (min-width: @desktop) {
     margin-bottom: 70px;
+  }
+}
+
+.registration__form input {
+  display: inline-block;
+  width: 270px;
+  height: 62px;
+  padding: 0 0 0 24px;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  vertical-align: middle;
+  color: @special_grey;
+  background-color: @basic_white;
+  border: 0;
+  border-radius: 10px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet) {
+    width: 616px;
+    height: 80px;
+    border-radius: 20px;
+    font-size: 24px;
+    line-height: 24px;
+    padding-left: 36px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 1174px;
+  }
+}
+
+.registration__form button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 62px;
+  font-size: 0;
+  display: flex;
+  align-items: center;
+  color: @basic_blue_light;
+  border: 0;
+  border-radius: 10px;
+  background-color: @basic_yellow;
+  cursor: pointer;
+
+  @media (min-width: @tablet) {
+    width: 80px;
+    height: 80px;
+    border-radius: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 326px;
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    padding-left: 37px;
+  }
+}
+
+.registration__form button::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 7px);
+  right: 12px;
+  border-width: 7px 10px;
+  border-style: solid;
+  border-color: transparent transparent transparent @basic_blue_light;
+
+  @media (min-width: @tablet) {
+    top: calc(50% - 5px);
+    right: calc(50% - 14px);
+  }
+
+  @media (min-width: @desktop) {
+    top: 42%;
+    right: 25px;
   }
 }

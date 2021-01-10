@@ -1,8 +1,38 @@
 .page-header-social {
-  display: flex;
-  max-width: 180px;
+  display: block;
+  outline: 1px solid red; // временно
+
+  @media (min-width: @tablet) {
+    margin-left: 57px;
+  }
 
   @media (min-width: @desktop) {
     display: none;
+  }
+}
+
+.page-header-social__list {
+  display: flex;
+  .list-reset;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.page-header-social__list a {
+  .link-reset;
+}
+
+.page-header-social__link {
+  background-color: @basic_white;
+  display: flex;
+  width: 45px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  @media (min-width: @tablet) {
+    width: 60px;
+    height: 60px;
   }
 }

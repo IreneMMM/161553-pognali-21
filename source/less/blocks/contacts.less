@@ -1,11 +1,24 @@
-.contacts__wrapper {
-  .flex-column;
-  align-self: flex-start;
-  align-items: flex-start;
+.contacts {
+  @media (min-width: @tablet) {
+    margin-left: 70px;
+    align-self: flex-start;
+  }
 
   @media (min-width: @desktop) {
+    margin-left: 0;
     align-self: center;
+  }
+}
+
+.contacts__wrapper {
+  .flex-column;
+  margin-left: -34px;
+
+  @media (min-width: @desktop) {
+    flex-direction: row;
     align-items: center;
+    margin-left: 0;
+    column-gap: 110px;
   }
 }
 
@@ -24,5 +37,96 @@
   @media (min-width: @tablet) {
     font-size: 28px;
     line-height: 28px;
+    margin-bottom: 14px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 0;
+  }
+}
+
+.contacts__link {
+  position: relative;
+  padding-left: 61px;
+  display: flex;
+  align-items: center;
+  padding-top: 13px;
+  padding-bottom: 13px;
+
+  @media (min-width: @tablet) {
+    padding-left: 91px;
+  }
+
+  @media (min-width: @desktop) {
+    padding-left: 122px;
+  }
+}
+
+.contacts__link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45px;
+  height: 45px;
+  background-color: @special_blue_dark_3;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+
+  @media (min-width: @tablet) {
+    width: 68px;
+    height: 68px;
+    top: -9px;
+    left: -1px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 90px;
+    height: 90px;
+    top: -18px;
+    left: 0;
+  }
+}
+
+.contacts__link-icon {
+  position: absolute;
+}
+
+.contacts__link-icon--phone {
+  top: 13px;
+  left: 13px;
+
+  @media (min-width: @tablet) {
+    width: 29px;
+    height: 28px;
+    top: 12px;
+    left: 18px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 36px;
+    height: 34px;
+    top: 9px;
+    left: 28px;
+  }
+}
+
+.contacts__link-icon--email {
+  top: 16px;
+  left: 13px;
+
+  @media (min-width: @tablet) {
+    width: 29px;
+    height: 20px;
+    top: 17px;
+    left: 20px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 36px;
+    height: 25px;
+    top: 15px;
+    left: 29px;
   }
 }

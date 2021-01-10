@@ -1,7 +1,7 @@
 .main-nav {
   background-color: @basic_white;
   padding-bottom: 41px;
-  padding-top: 19px;
+  padding-top: 27px;
   position: relative;
   top: 0;
   left: 0;
@@ -13,12 +13,11 @@
 
   @media (min-width: @desktop) {
     background-color: transparent;
-    padding-top: 46px;
+    padding-top: 50px;
   }
 }
 
 .main-nav__wrapper {
-  .wrapper;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -29,6 +28,8 @@
   @media (min-width: @tablet) {
     flex-direction: row;
     justify-content: flex-start;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @media (min-width: @desktop) {
@@ -135,6 +136,16 @@
   background-color: none;
   flex-direction: column;
   position: relative;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  @media (min-width: @tablet) {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 82px;
+    z-index: 4;
+    flex-direction: row;
+  }
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -144,7 +155,7 @@
   cursor: pointer;
   position: absolute;
   background-color: transparent;
-  top: 21px;
+  top: 34px;
   right: 25px;
 
   &::before,
@@ -183,7 +194,7 @@
     display: none;
   }
 
-  .main-nav--closed .social__list {
+  .main-nav--closed .page-header-social__list {
     display: none;
   }
 
@@ -205,6 +216,8 @@
   .main-nav--opened .main-nav__toggle {
     position: relative;
     top: 0;
+    right: auto;
+    margin: 0 auto;
 
     &::before,
     &::after {
@@ -213,9 +226,18 @@
       right: -4px;
     }
   }
+
+  .main-nav--opened .main-nav__login {
+    margin: 0;
+    order: -1;
+  }
+
+  .main-nav--opened .page-header__logo-main {
+    margin: 0;
+  }
 }
 
-@media (max-width: @tablet_only) {
+@media (min-width: @tablet) and (max-width: @tablet_only) {
   .main-nav__wrapper.main-nav--closed {
     background-color: transparent;
   }
@@ -228,7 +250,7 @@
     display: none;
   }
 
-  .main-nav--closed .social__list {
+  .main-nav--closed .page-header-social__list {
     display: none;
   }
 
@@ -247,7 +269,7 @@
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  border-radius: 20px;
+  border-radius: 25px;
   padding: 10px;
   border: none;
   margin-bottom: 51px;

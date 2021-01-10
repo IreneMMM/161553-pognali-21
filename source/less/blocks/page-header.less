@@ -1,31 +1,61 @@
 .page-header {
   background-color: @basic_blue;
+  background-image: url("/img/header_mobile_background.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 
   @media (min-width: @tablet) {
     background-color: @special_blue_dark;
+    background-image: url("/img/header_tablet_background.jpg");
+    background-position: center 382px;
+    background-repeat: no-repeat;
+    background-size: auto 612px;
+    position: relative;
   }
 
   @media (min-width: @desktop) {
-    background-color: @basic_blue_dark;
-    min-height: 53px;
+    background-color: @basic_blue;
+    background-image: url("/img/header_desktop_background.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: auto 100%;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    z-index: 3;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/header_desktop_background@2x.png");
+    }
   }
 }
 
-.page-header--main {
+.page-header__wrapper {
+  .wrapper;
   min-height: 569px;
-  background-image: url("/img/traveller_mobile.png"), url("/img/header_mobile_background.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: 62% 222px, 0 0;
+  background-image: url("/img/traveller_mobile.png");
+  background-repeat: no-repeat;
+  background-position: 62% 222px;
   color: @basic_white;
 
-  // временно отключено фоновое изображение
   @media (min-width: @tablet) {
-    background-image: none;
+    min-height: 994px;
+    background-image: url("/img/traveller_tablet.png");
+    background-position: 285px 405px;
+    background-repeat: no-repeat;
+    background-size: 372px 451px;
   }
 
   @media (min-width: @desktop) {
-    min-height: 0;
+    min-height: 750px;
+    background-image: url("/img/traveller_desktop.png");
+    background-position: 602px 110px;
+    background-repeat: no-repeat;
+    background-size: 431px 640px;
   }
+}
+
+.page-header__wrapper--opened {
+  padding: 0;
 }
 
 .page-header--form {
@@ -58,6 +88,7 @@
 }
 
 .page-header__logo-main img {
-  width: 96px;
-  height: 15px;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
 }
